@@ -21,8 +21,6 @@ function displayArgs() {
     out.appendChild(document.createElement("br"));
     out.appendChild(document.createElement("br"));
 
-
-
     for (i = 0; i < 4; i++){
    	var a = document.createElement('a');   
     var link = document.createElement("img");
@@ -33,13 +31,6 @@ function displayArgs() {
     a.target= "_blank";
     out.appendChild(a);
     }
-
-
-
-
-
-
-
 
     out.appendChild(document.createElement("br"));
     out.appendChild(document.createElement("br"));
