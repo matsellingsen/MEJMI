@@ -213,6 +213,29 @@ a#Nboks{
 }
 
 
+footer{
+	width: 100%;
+	height: auto;
+	padding-bottom: 80px;
+	margin-top: -5px;
+	background-color: #03394F;
+	color: white;
+	text-align: center;
+	padding-top: 80px;
+}
+
+#foot a{
+	color: #3FB6F9;
+}
+
+
+.facelink{
+	width: 50px;
+	margin: 0 10px;
+}
+
+
+
 
 @media screen and (max-width: 1205px) and (min-width: 951px){
 	.tekstbilde h1{
