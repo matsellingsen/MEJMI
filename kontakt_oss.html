@@ -4,62 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt oss</title>
-    <link rel="stylesheet" href="CSS/Main.css">
+    <link rel="stylesheet" href="stil.css">
 </head>
-<body>
+<body class="kontakt_oss">
         
     <div class="overskrift">
-        <img src="Images/kontaktBilde.jpg" alt="Folk på et kjøkken">
+        <!--Tekst på hovedbildet-->
         <h1>Kontakt oss!</h1>
-        <p>Vi har et trivelig team elns</p>
+        <p>Vi har et trivelig team</p>
     </div>
     
 
     <div class="vårt_team">
+        <!--Beskrivelse av vårt team-->
         <h2>VÅRT TEAM</h2>
         <p>Vi er kreative folk med høy kompetanse, gode ideer og lang erfaring innen produksjon av nettsider og kostnadseffektiv markedsføring</p>
     </div>
+    <div class="ansatte">
+        <!--Våre ansatte individuelt-->
+        <div class="ansatt">
+            <img id="portrett_jakob" src="portrett.png" alt="Jakob Keller">
+            <h4>Jakob Keller</h4>
+            <p>webutvikler</p>
+            <p>930 78 799</p>
+            <p>jakob.keller@mejmi.no</p>
+        </div>
 
-    <div class="ansatt1">
-        <img id="portrett_jakob" src="Images/portrett.png" alt="Jakob Keller">
-        <h4>Jakob Keller</h4>
-        <p>webutvikler</p>
-        <p>906 02 111</p>
-        <p>jakob.keller@mejmi.no</p>
+        <div class="ansatt">
+            <img id="portrett_ingeborg" src="portrett.png" alt="Ingeborg Hirsti">
+            <h4>Ingeborg Hirsti</h4>
+            <p>webutvikler</p>
+            <p>906 02 111</p>
+            <p>ingeborg.hirsti@mejmi.no</p>
+        </div>
+
+        <div class="ansatt">
+            <img id="portrett_edvard" src="portrett.png" alt="Edvard Bjørnevik">
+            <h4>Edvard Bjørnevik</h4>
+            <p>Webutvikler</p>
+            <p>906 02 111</p>
+            <p>edvard.bjørnevik@mejmi.no</p>
+        </div>
+
+        <div class="ansatt">
+            <img id="potrett_mats" src="portrett.png" alt="Mats Ellingsen">
+            <h4>Mats Ellingsen</h4>
+            <p>Webutvikler</p>
+            <p>906 02 111</p>
+            <p>mats.ellingsen@mejmi.no</p>
+        </div>
+
+        <div class="ansatt">
+            <img id="portrett_mathias" src="portrett.png" alt="Mathias Schulstok">
+            <h4>Mathias Schulstok</h4>
+            <p>Webutvikler</p>
+            <p>906 02 111</p>
+            <p>mathias.schulstok@mejmi.no</p>
+        </div>  
     </div>
-
-    <div class="ansatt2">
-        <img id="portrett_ingeborg" src="Images/portrett.png" alt="Ingeborg Hirsti">
-        <h4>Ingeborg Hirsti</h4>
-        <p>webutvikler</p>
-        <p>906 02 111</p>
-        <p>ingeborg.hirsti@mejmi.no</p>
-    </div>
-
-    <div class="ansatt3">
-        <img id="portrett_edvard" src="Images/portrett.png" alt="Edvard Bjørnevik">
-        <h4>Edvard Bjørnevik</h4>
-        <p>Webutvikler</p>
-        <p>906 02 111</p>
-        <p>edvard.bjørnevik@mejmi.no</p>
-    </div>
-
-    <div class="ansatt4">
-        <img id="potrett_mats" src="Images/portrett.png" alt="Mats Ellingsen">
-        <h4>Mats Ellingsen</h4>
-        <p>Webutvikler</p>
-        <p>906 02 111</p>
-        <p>mats.ellingsen@mejmi.no</p>
-    </div>
-
-    <div class="ansatt5">
-        <img id="portrett_mathias" src="Images/portrett.png" alt="Mathias Schulstok">
-        <h4>Mathias Schulstok</h4>
-        <p>Webutvikler</p>
-        <p>906 02 111</p>
-        <p>mathias.schulstok@mejmi.no</p>
-    </div>  
-
     
     
     
@@ -67,31 +69,34 @@
     
 
     <div class="blå">
+        <!--Kontakskjema-->
         <div class="kontakt_tekst">
             <h4>Ta gjerne kontakt for en hyggelig prat</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptates? Non, odit aliquid? Autem perferendis molestias hic vel nesciunt quam eligendi reiciendis distinctio, provident tempore inventore doloribus amet asperiores. Dolores.</p>
         </div>
 
-        <form action="" method="post">
-            <label for="navn">Navn</label><br>
+        <form action="bruker_info" method="post">
+            <label for="navn" >Navn</label><br>
                 <input type="text" id="navn" required><br>
 
-            <label for="Epost">Eport</label><br>
+            <label>Epost</label><br>
                 <input type="email" id="email" required><br>
 
-            <label for="Telefon">Telefon</label><br>
-                <input type="number" id="tlf" maxlength="8" minlength="8" required><br>
+            <label>Telefon</label><br>
+                <input type="tel" id="tlf" maxlength="8" minlength="8" required><br>
 
-            <label for="Melding">Melding</label><br>
-                <textarea type="text" id="melding" required></textarea><br>
+            <label>Melding</label><br>
+                <textarea name="text" id="melding" required></textarea><br>
             
-            <br><input type="submit" value="SEND">
+            <br><input type="submit" value="SEND" id="send">
         </form>
     </div>
 
     <div class="jobb">
-        <h2>Øsnker du å jobbe hos oss?</h2>
+        <!--Jobb-søke mulighet-->
+        <h2>Ønsker du å jobbe hos oss?</h2>
         <button type="button">Ledige stillinger</button>
     </div>
+    <script src="footer.js"></script>
 </body>
 </html>
