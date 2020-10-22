@@ -140,27 +140,7 @@ li{
 	margin: 50px 5% 50px 5%;
 }
 
-.blokk1{
-	background-color: white;
-	margin-left: 3%;
-	float: left;
-	width: 30%;
-	min-height: 220px;
-	height: auto;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.blokk2{
-	background-color: white;
-	margin-left: 3%;
-	float: left;
-	width: 30%;
-	min-height: 220px;
-	height: auto;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.blokk3{
+.blokk1, .blokk2, .blokk3{
 	background-color: white;
 	margin-left: 3%;
 	float: left;
