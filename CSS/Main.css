@@ -55,12 +55,78 @@ html {
 }
 
 
-#gprofil{
-	/* Videre tekstplassering for teksten på hovedbildet til grafisk profil.*/
-	/* Trengs fordi grafisk og nettsidedesign har forskjellig posisjon*/
-	left: 35%;
-	text-align: left;
-}
+/*Her styles bildene i referanser.html*/
+	.bilderRef {
+    	margin-bottom: 50px;
+	}
+
+	#refEn, #refTo, #refTre {
+		margin-top: 80px;
+	}
+
+	#refEn, #refFire, #refSyv {
+		background-color: white;
+		margin-left: 7%;
+		float: left;
+		width: 27%;
+		min-height: 220px;
+		height: auto;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	}
+
+	#refTo, #refFem, #refÅtte {
+		background-color: white;
+		margin-left: 3%;
+		float: left;
+		width: 27%;
+		min-height: 220px;
+		height: auto;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	}
+
+	#refTre, #refSeks, #refNi{
+		background-color: white;
+		margin-left: 3%;
+		width: 27%;
+		min-height: 220px;
+		height: auto;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	}
+
+
+	/*Effekt på bildene*/
+	/* Container needed to position the overlay. Adjust the width as needed */
+	.container {
+		position: relative;
+	}
+
+
+	/* The overlay effect - lays on top of the container and over the image */
+	.overlay {
+		position: absolute;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.5); /* Black see-through */
+		color: #f1f1f1;
+		width: 100%;
+		transition: .5s ease;
+		opacity:0;
+		color: white;
+		font-size: 20px;
+		padding: 20px;
+		text-align: center;
+	}
+	
+	/* When you mouse over the container, fade in the overlay title */
+	.container:hover .overlay {
+		opacity: 1;
+	}
+
+	#gprofil{
+		/* Videre tekstplassering for teksten på hovedbildet til grafisk profil.*/
+		/* Trengs fordi grafisk og nettsidedesign har forskjellig posisjon*/
+		left: 35%;
+		text-align: left;
+	}
 
 
 
