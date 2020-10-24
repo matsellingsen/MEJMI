@@ -121,12 +121,12 @@ html {
 		opacity: 1;
 	}
 
-	#gprofil{
-		/* Videre tekstplassering for teksten på hovedbildet til grafisk profil.*/
-		/* Trengs fordi grafisk og nettsidedesign har forskjellig posisjon*/
-		left: 35%;
-		text-align: left;
-	}
+#gprofil{
+/* Videre tekstplassering for teksten på hovedbildet til grafisk profil.*/
+/* Trengs fordi grafisk og nettsidedesign har forskjellig posisjon*/
+left: 35%;
+text-align: left;
+}
 
 
 
