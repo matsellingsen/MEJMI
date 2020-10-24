@@ -45,7 +45,7 @@ html {
 }
 
 .tekstPåBilde{
-	/*Tekst til hovedbilder på hver side. Plassering. */
+	/*Tekst til hovedbilder på hver side. Plassering midt på. */
 	top: 35%;
 	position: absolute;
 	text-align: center;
