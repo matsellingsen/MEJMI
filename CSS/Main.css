@@ -8,7 +8,9 @@ body{
 	font-size: 24px;
 	font-family: tahoma;
 	color: #03394F;
+	height: 100%;
 }
+
 
 
 h1{
@@ -24,14 +26,34 @@ li{
 	list-style-type: "-";
 }
 
-.tekstbilde{
-	/*Tekst til hovedbilder på hver side. Plassering. */
-	margin-top: -40%;
-	position: absolute;
-	left: 20px;
-	color: #FFFFFF;
-	width: 52%;
+img {
+	width: 100%;
 }
+
+
+html {
+    height: 100%;
+}
+
+
+.hovedbilde {
+    height: 100%; 
+    background-position: center;
+	background-size: cover;
+	z-index: -1;
+
+}
+
+.tekstPåBilde{
+	/*Tekst til hovedbilder på hver side. Plassering. */
+	top: 35%;
+	position: absolute;
+	text-align: center;
+	color: #FFFFFF;
+    width: 100%;
+    z-index: 1;
+}
+
 
 #gprofil{
 	/* Videre tekstplassering for teksten på hovedbildet til grafisk profil.*/
@@ -40,13 +62,7 @@ li{
 	text-align: left;
 }
 
-#Ndesign{
-	/* Videre tekstplassering for teksten på hovedbildet til nettsidedesign*/
-	text-align: center;
-	color: #03394F;
-	margin-top: -30%;
-	left: 30%;
-}
+
 
 .Sporsmal{
 	/* Posisjon av "vanlig" tekst på siden*/
