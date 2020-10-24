@@ -181,14 +181,6 @@ img{
     /* VÅRT TEAM */
     /*Kontakt oss sin css*/
 
-    .kontakt_oss{
-        /*Hovedbildet*/
-        background-image: url("kontaktBilde.jpg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        font-family: Tahoma;
-    }
-
 
     .overskrift {
         /*plasserer teksten på hovedbildet*/
