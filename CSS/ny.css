@@ -10,7 +10,8 @@ body{
 	background-color: #FCFCFC;
 	font-size: 24px;
 	font-family: tahoma;
-	color: #03394F;
+    color: #03394F;
+    height: 100%;
 }
 img{
 	width: 100%;
