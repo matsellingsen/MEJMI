@@ -1,0 +1,138 @@
+/* Dette er generelt */  
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	background-color: #FCFCFC;
+	font-size: 24px;
+	font-family: tahoma;
+    color: #03394F;
+    height: 100%;
+}
+
+h1{
+	font-size: 52px;
+}
+
+h2{
+	font-size: 24px;
+}
+
+/*Brukes for å få bildet til å akkurat fylle skjermen og teksten oppå*/
+html {
+    height: 100%;
+}
+
+.referansebilde {
+    height: 100%; 
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.tekstPåBildeRef{
+    top: 35%;
+	position: absolute;
+	text-align: center;
+	color: #FFFFFF;
+    width: 100%;
+    z-index: 1;
+}
+
+/*Her styles bildene som viser prosjektene våre*/
+.bilderRef {
+    margin-bottom: 50px;
+}
+
+#refEn, #refTo, #refTre {
+    margin-top: 80px;
+}
+
+#refEn, #refFire, #refSyv {
+	background-color: white;
+    margin-left: 7%;
+    float: left;
+	width: 27%;
+	min-height: 220px;
+	height: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#refTo, #refFem, #refÅtte {
+	background-color: white;
+    margin-left: 3%;
+    float: left;
+	width: 27%;
+	min-height: 220px;
+	height: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#refTre, #refSeks, #refNi{
+	background-color: white;
+    margin-left: 3%;
+	width: 27%;
+	min-height: 220px;
+	height: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*Effekt på bildene*/
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+    position: relative;
+  }
+
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* When you mouse over the container, fade in the overlay title */
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
+
+  /*Her er boksen helt til slutt. Kopiert fra hoved-CSS*/
+.Sporsmal{
+	text-align: center;
+	margin: 50px 5% 80px 5%;
+}
+
+.BOKS{
+	text-align: left;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin-bottom: 30px;
+}
+
+#Nboks{
+	text-align: center;
+	padding: 20px;
+	padding-bottom: 30px;
+}
+
+a#Nboks{
+	text-decoration: none;
+	border-style: solid;
+	border-color: #E9B56A;
+	color: #E9B56A;
+	font-size: 20px;
+	padding: 5px 20px;
+}
