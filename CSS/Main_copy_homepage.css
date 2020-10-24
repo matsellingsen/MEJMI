@@ -7,6 +7,7 @@ body{
 	background-color: #FCFCFC;
 	font-size: 24px;
 	font-family: tahoma;
+	font-weight: 50;
 	color: #03394F;
 }
 
@@ -90,7 +91,11 @@ li{
 	}
 
 /* TJENESTER */
-	.blokk1, .blokk2, .blokk3{ 
+	.tjenester {
+		display: flex;
+	}
+
+	.tjenester_nDesign, .tjenester_gProfil, .tjenester_SEO{ 
 		align-content: center;
 		margin-left: 7%;
 		float: left;
@@ -99,7 +104,7 @@ li{
 		height: auto;
 	}
 
-	.blokk1:hover, .blokk2:hover, .blokk3:hover{
+	.tjenester_nDesign:hover, .tjenester_gProfil:hover, .tjenester_SEO:hover{
 		transition: 0.5s;
 		width: 18%;
 	}

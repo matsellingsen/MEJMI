@@ -1,0 +1,68 @@
+/* FELLES */
+
+    /* FONT / FONTSTØRRELSER*/
+        h1{
+            /* hovedoverskrift på hovedbilde */
+            font-size: 52px;
+        }
+        h2{
+            /* underoverskrifter */
+            font-size: 36px;
+        }
+        p{
+            /* tekst */
+            font-size: 24px;
+        }
+    /* HOVEDBILDE */
+        >ingeborg sin
+    /* BLÅ FAKTABOKS / OM OSS / BRANDING */
+        .Rfakta{
+            padding-left: 5px;
+            color: white;
+            width: 100%;
+            height: auto;
+            display: inline-block;
+            background-color: rgba(66,122,161, 70%);
+        }
+        .faktabildet{
+            width: 40%;
+            height: auto;
+            padding: 0 10px 0 0;
+            float: left;
+        }
+        #Rfaktabildet{
+            padding: 0 0 0 10px;
+            float: right;
+        }
+        .faktatekst{
+            width: 60%;
+            height: auto;
+            padding: 0 10px 0 10px;
+            float: right;
+        }
+        #Rfaktatekst{
+            float: left;
+        }
+    /* FOOTER */
+    /* KONTAKT OSS / TA EN PRAT? */
+
+/* HOMEPAGE */
+    /* TJENESTER */
+
+/* KONTAKT OSS */
+    /* KONTAKTSKJEMA */
+    /* VÅRT TEAM */
+
+/* REFERANSER */
+    /* TIDLIGERE PROSJEKTER */
+
+/* NETTSIDEDESIGN */
+    /* "HVA INNEBÆRER DET Å LAGE EN NETTSIDE?" */
+    /* "CSS" */
+
+/* GRAFISK PROFIL */
+    /* FOR AT KUNDEN SKAL HUSKE DEG */
+
+/* SEO */
+    /* VANLIGE SPØRSMÅL */
+    /* PAKKER */
