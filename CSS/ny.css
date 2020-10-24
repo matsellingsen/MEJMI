@@ -213,7 +213,7 @@ img{
             /*Posisjon av ansatt boksene*/
             background-color: white;
             width: 25vw;
-            height: 40vh;
+            height: 30;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             text-align: center;
             margin-left: 25px;
@@ -258,6 +258,7 @@ img{
             /*dimensjon til melding felt*/
             height: 15vh;
             width: 30vw;
+            margin-left: 59vw;
         }
         #send {
             /*dimensjon og posisjon av send-knapp*/
@@ -268,104 +269,9 @@ img{
             border: none;
             background-color: #E9B56A;
             color: white;
-        }
-    
+        }  
 
-
-/*Kontakt oss sin css*/
-
-    .kontakt_oss{
-        /*Hovedbildet*/
-        background-image: url("kontaktBilde.jpg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        font-family: Tahoma;
-    }
-
-
-    .overskrift {
-        /*plasserer teksten på hovedbildet*/
-        margin: 30% 15%;
-        color: white;
-        text-align: center;
-    }
-    .overskrift h1{
-        /*Skrift størrelse*/
-        font-size: 36pt;
-    }
-    .overskrift p {
-        /*Skrift størelse*/
-        font-size: 24pt;
-
-    }
-    .vårt_team {
-        margin: 30% 15%;
-        text-align: center;
-    }
-    .vårt_team h2 {
-        /*Posisjon av h2 "Vårt team"*/
-        font-size: 36pt;
-        color: #03394F;
-        margin-bottom: 5vh;
-
-    }
-    .vårt_team p {
-        /*posisjon av undertekst til vårt team*/
-        font-size: 24pt;
-        color: #03394F;
-
-    }
-    .konteiner {
-        width: 90vw;
-        height: 100vh;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        text-align: center;
-        margin-bottom: 15vh;
-
-    }
-    .ansatt {
-        /*Posisjon av ansatt boksene*/
-        background-color: white;
-        width: 25vw;
-        height: 40vh;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        text-align: center;
-        margin-left: 25px;
-        margin-right: 25px;
-        margin-bottom: 10%;
-        float: left;
-    }
-    .ansatt .portrett {
-        /*Posisjon av portrett*/
-        margin: -10%;
-        width: 8vw;
-        height: auto;
-
-    }
-    .ansatt h4 {
-        /*Posisjon av navn in boksen*/
-        color: #03394F;
-        font-size: 16pt;
-        margin: 12%;
-    }
-    .ansatt p {
-        /*Posisjon av beskrivelse til folk*/
-        color:  #03394F;
-        font-size: 14pt;
-        word-break: break-all;
-        margin-left: 2vw;
-        margin-right: 2vw;
-    }
-    .ansatt p:nth-of-type(1){
-        /*Farge på jobb-stillingen*/
-        color: #D2AA43;
-        top: -25%;
-    }
-    
-    
-    
-
+        
 /* REFERANSER */
     /* TIDLIGERE PROSJEKTER */
     /*Her styles bildene i referanser.html*/
