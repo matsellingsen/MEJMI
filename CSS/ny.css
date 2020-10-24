@@ -27,10 +27,15 @@ img{
         h1{
             /* hovedoverskrift på hovedbilde */
             font-size: 52px;
+            font-weight: 50;
         }
         h2{
             /* underoverskrifter */
             font-size: 36px;
+            font-weight: 50;
+        }
+        h3{
+            font-size: 30px;
         }
         p{
             /* tekst */
