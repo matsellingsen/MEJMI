@@ -182,21 +182,6 @@ img{
     /*Kontakt oss sin css*/
 
 
-    .overskrift {
-        /*plasserer teksten på hovedbildet*/
-        margin: 30% 15%;
-        color: white;
-        text-align: center;
-    }
-    .overskrift h1{
-        /*Skrift størrelse*/
-        font-size: 36pt;
-    }
-    .overskrift p {
-        /*Skrift størelse*/
-        font-size: 24pt;
-
-    }
     .vårt_team {
         margin: 30% 15%;
         text-align: center;
