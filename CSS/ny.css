@@ -52,7 +52,7 @@ img{
         /*HOVEDBILDE / HOMEPAGE / SLIDESHOW */
         #hovedbilde {
             height: 100%; 
-            background-position: center, center. center;
+            background-position: center, center, center;
             background-size: cover, cover, cover;
             background-repeat: no-repeat, no-repeat, no-repeat;
             background-image: url(../Images/homepage/hovedbilde.png), url(../Images/homepage/hovedbilde2.jpg), url(../Images/homepage/hovedbilde3.jpg);
