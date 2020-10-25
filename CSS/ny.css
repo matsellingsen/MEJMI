@@ -180,27 +180,41 @@ img{
         }
 /* HOMEPAGE */
     /* TJENESTER */
-        .tjenester {
+        #tjenester h2, p{
+            text-align: center;
+        }
+
+        #tjenester h2{
+            margin-top: 10%;
+        }
+        
+        .tjenester h3, .lesMer{
+            color: #7AA1BC;
+        }
+        
+        .containerTjenester{
             display: flex;
+            justify-content: center;
+            flex-flow: row wrap;
+            margin-bottom: 10%;
         }
-        .tjenester_nDesign, .tjenester_gProfil, .tjenester_SEO{ 
-            align-content: center;
-            margin-left: 7%;
-            float: left;
-            width: 16%;
-            min-height: 220px;
-            height: auto;
+        
+        .tjenester{
+            height: 50%;
+            width: 20%;
+            margin: 3%;
+            text-align: center;
         }
-        .tjenester_nDesign:hover, .tjenester_gProfil:hover, .tjenester_SEO:hover{
-            transition: 0.5s;
-            width: 18%;
+        
+        .tjenester img{
+            height: 100px;
+            width: auto;
         }
+    
 
 /* KONTAKT OSS */
     /* KONTAKTSKJEMA */
     /* VÅRT TEAM */
-    /*Kontakt oss sin css*/
-
 
         .vårt_team {
             margin: 30% 15%;
