@@ -180,6 +180,7 @@ img{
         }
 /* HOMEPAGE */
     /* TJENESTER */
+    
         #tjenester h2, p{
             text-align: center;
         }
@@ -200,6 +201,7 @@ img{
         }
         
         .tjenester{
+            
             height: 50%;
             width: 20%;
             margin: 3%;

@@ -1,11 +1,17 @@
-var canvas = document.querySelector('canvas');
-   // canvas.style.border = "1px solid black";
-    canvas.style.marginLeft = "30%";
-    canvas.style.marginRight = "auto";
-    
-    canvas.width = 500;
-    canvas.height = 500;    
-var c = canvas.getContext("2d");
+var canvasBouncing = document.getElementById("bouncing");
+
+console.log("høyde",window.innerHeight)
+    const tjenester = document.getElementById("tjenester");
+    const position = tjenester.getBoundingClientRect();
+    const width = tjenester.offsetWidth;
+    const height = tjenester.offsetHeight;
+    canvasBouncing.style.position = "absolute";
+    canvasBouncing.style.top = "140%";
+    canvasBouncing.style.zIndex = "-1";
+    canvasBouncing.width = width;
+    canvasBouncing.height = height*0.75;  
+    //canvasBouncing.style.border = "1px solid black";  
+var cBouncing = canvasBouncing.getContext("2d");
 var circleAmount = 6;
 
 
@@ -19,15 +25,15 @@ function Circle(a, d, ax, dy, radius) {
 
 // tegner sirkel i canvas
     this.draw = function() {      
-        c.beginPath();
-        c.arc(this.a , this.d, this.radius, 0, Math.PI * 2, false );
+        cBouncing.beginPath();
+        cBouncing.arc(this.a , this.d, this.radius, 0, Math.PI * 2, false );
         //c.lineWidth = 1
-        c.fillStyle = "#ff6600";
-        c.strokeStyle = "white";
+        cBouncing.fillStyle = "#ff6600";
+        cBouncing.strokeStyle = "white";
         
         
-        c.fill();
-        c.stroke(); 
+        cBouncing.fill();
+        cBouncing.stroke(); 
 /*
         c.beginPath()
         c.arc(this.a, this.d,this.radius-10,0,Math.PI * 2,false);
@@ -44,7 +50,7 @@ function Circle(a, d, ax, dy, radius) {
     this.update =  function() {
 
         //Hvis ball treffer vegg
-        if (this.a + this.radius > canvas.width || this.a - this.radius <= 0) {
+        if (this.a + this.radius > canvasBouncing.width || this.a - this.radius <= 0) {
             this.ax = -this.ax;
         }
         // Hvis ball treffer taket
@@ -52,7 +58,7 @@ function Circle(a, d, ax, dy, radius) {
           this.dy = -this.dy;
       }
       // Hvis ball treffer bunnen
-        if ( this.d + this.radius > canvas.height) {
+        if ( this.d + this.radius > canvasBouncing.height) {
         this.dy = -this.dy;
         
          
@@ -72,8 +78,8 @@ var circleArray = [];
 function leggTilSirkel(){
 for (i = 0; i < circleAmount; i++){
 var radius = 30;
-var a = Math.random() * (canvas.width - radius * 2) + radius;
-var d = Math.random() * (canvas.height - radius * 2) + radius;
+var a = Math.random() * (canvasBouncing.width - radius * 2) + radius;
+var d = Math.random() * (canvasBouncing.height - radius * 2) + radius;
 var ax = (Math.random() - 0.5)*0.5;
 var dy = (Math.random() - 0.5)*0.5;
 circleArray.push(new Circle(a, d, ax, dy, radius));
@@ -82,7 +88,7 @@ leggTilSirkel();
 
 function animate() {
     requestAnimationFrame(animate);  
-    c.clearRect(0, 0, innerWidth, innerHeight); 
+    cBouncing.clearRect(0, 0, innerWidth, innerHeight); 
        
     // Oppdaterer sirklene 
     for (i = 0; i < circleAmount  ; i++){ 
