@@ -115,10 +115,10 @@ img{
         #Nboks{
             /* Kontakt oss boksen nederst på nettsidedesign*/
             text-align: center;
-            padding: 20px;
-            padding-bottom: 30px;
+            padding: 70px;
+            padding-bottom: 70px;
         }
-        a#Nboks{
+        #kontaktLink{
             /* Linken til kontakt oss boksen*/
             text-decoration: none;
             border-style: solid;
@@ -336,19 +336,19 @@ img{
     /* "CSS" */
 
 /* GRAFISK PROFIL */
-    #sosiale{
+    #sosiale1, #sosiale2, #sosiale3{
         width: 30%;
         height: auto;
         min-height: 0px;
     }
 
-    #sosiale p{
+    #sosiale1 p, #sosiale2 p, #sosiale3 p {
         color: white;
         margin-top: -40%;
         margin-left: 20%;
     }
 
-    #sosiale #face{
+    #sosiale2 #face{
         text-align: center;
         margin-left: 0px;
     }
