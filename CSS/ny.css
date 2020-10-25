@@ -21,7 +21,7 @@ img{
 	/* Posisjon av "vanlig" tekst på siden*/
 	/* må tydligvis ha denne for at KONTAKTOSS boksen nederst skal bli riktig */
 	text-align: center;
-	margin: 50px 5% 80px 5%;
+	margin: 120px 5%;
 }
     /* FONT / FONTSTØRRELSER*/
         h1{
@@ -40,6 +40,8 @@ img{
         p{
             /* tekst */
             font-size: 24px;
+            line-height: 1.5em;
+
         }
         li{
             font-size: 10px;
@@ -63,9 +65,11 @@ img{
             width: 100%;
             z-index: 1;
         }
+
+
     /* BLÅ FAKTABOKS / OM OSS / BRANDING */
         .Rfakta{
-            padding-left: 5px;
+            padding-left: 20px;
             color: white;
             width: 100%;
             height: auto;
@@ -85,7 +89,7 @@ img{
         .faktatekst{
             width: 60%;
             height: auto;
-            padding: 0 10px 0 10px;
+            padding: 2em 3em;
             float: right;
         }
         #Rfaktatekst{
@@ -132,13 +136,13 @@ img{
             text-align: left;
             background-color: white;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            margin-bottom: 30px;
+
         }
 
     /* MEDIA */
     /*Tre under er for at overskriften skal endre størrelse med vinduet*/
         @media screen and (max-width: 1205px) and (min-width: 951px){
-            .tekstbilde h1{
+            .tekstPåBilde h1{
                 font-size: 40px
             }
             p{
@@ -147,7 +151,7 @@ img{
         }
 
         @media screen and (max-width: 950px) and (min-width: 701px){
-            .tekstbilde h1{
+            .tekstPåBilde h1{
                 font-size: 30px
             }
             p{
@@ -156,7 +160,7 @@ img{
         }
 
         @media screen and (max-width: 700px){
-            .tekstbilde h1{
+            .tekstPåBilde h1{
                 font-size: 20px
             }
             p{
@@ -325,7 +329,7 @@ img{
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         text-align: center;
-
+    }
 
 
 /* NETTSIDEDESIGN */
@@ -359,6 +363,8 @@ img{
     }
     
     .blokk1, .blokk2, .blokk3{
+        margin-top: 50px;
+        margin-bottom: 80px;
         background-color: white;
         margin-left: 3%;
         float: left;
@@ -401,22 +407,24 @@ img{
     .boks{
         float: left;
         width: 50%;
-        padding: 20px 10px 20px 20px;
+        padding: 45px 10px 20px 60px;
         height: auto;
     }
     
     .boks2{
         float: left;
         width: 50%;
-        padding: 20px 20px 20px 10px;
+        padding: 20px 60px 20px 10px;
         height: auto;
     }
+
     
     .Sboks:after{
         content: "";
         display: table;
         clear: both;
     }
+
     
     /* Alt over posisjonering og størrelser på SEO boksene*/
 
