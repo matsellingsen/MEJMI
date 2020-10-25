@@ -275,68 +275,65 @@ img{
 /* REFERANSER */
     /* TIDLIGERE PROSJEKTER */
     /*Her styles bildene i referanser.html*/
-	.bilderRef {
-    	margin-bottom: 50px;
+    .alleBilderRef {
+        margin: 100px 50px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+    
+    .bilderRef {
+        width: 350px;
+        height: 220px;
+        margin-bottom: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	}
-	#refEn, #refTo, #refTre {
-		margin-top: 80px;
-	}
-	#refEn, #refFire, #refSyv {
-		background-color: white;
-		margin-left: 7%;
-		float: left;
-		width: 27%;
-		min-height: 220px;
-		height: auto;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	}
-	#refTo, #refFem, #refÅtte {
-		background-color: white;
-		margin-left: 3%;
-		float: left;
-		width: 27%;
-		min-height: 220px;
-		height: auto;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	}
-	#refTre, #refSeks, #refNi{
-		background-color: white;
-        margin-left: 3%;
-		width: 27%;
-		min-height: 220px;
-		height: auto;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	}
-	/*Effekt på bildene*/
-	/* Container needed to position the overlay. Adjust the width as needed */
+	
+
+	/*Overlayeffekt på bildene. Koden her er i store trekk lånt fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade*/
 	.container {
-		position: relative;
-	}
-	/* The overlay effect - lays on top of the container and over the image */
+        position: relative;
+        width: 350px;
+    }
+	
 	.overlay {
-		position: absolute;
-		bottom: 0;
-		background: rgba(0, 0, 0, 0.5); 
-		color: #f1f1f1;
+        bottom: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+		background-color: rgba(0, 0, 0, 0.5); 
+        height: 220px;
 		width: 100%;
 		transition: .5s ease;
-		opacity:0;
-		color: white;
-		font-size: 20px;
-		padding: 20px;
-		text-align: center;
-	}
-	/* When you mouse over the container, fade in the overlay title */
+		opacity: 0;
+    }
+    
 	.container:hover .overlay {
 		opacity: 1;
-	}
+    }
+    
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+
 
 /* NETTSIDEDESIGN */
     /* "HVA INNEBÆRER DET Å LAGE EN NETTSIDE?" */
     /* "CSS" */
 
 /* GRAFISK PROFIL */
-    #sosiale1, #sosiale2, #sosiale3{
+    #sosiale1, #sosiale2, #sosiale3 {
         width: 30%;
         height: auto;
         min-height: 0px;
