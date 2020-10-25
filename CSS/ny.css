@@ -437,3 +437,32 @@ img{
         color: white;
         background-color: rgba(66,122,161,70%);
     }
+
+
+
+    /*NAVBAR*/
+       
+        #links > a:not(#logo){
+            color: rgb(3,57,79);
+            visibility: hidden;
+            text-decoration: none;
+            margin-left: 14%;       
+        }
+        #logo{
+            font-family:  sans-serif,Verdana, Geneva, Tahoma;
+            font-size: xx-large;
+            letter-spacing: 5px;
+            text-decoration: none;
+            color: rgb(3,57,79);
+            margin-left: 3%;
+        }
+        #links {
+            padding-top: 2%;
+            padding-bottom: 2%;
+            z-index: 2;
+            width: 100%;
+            position: fixed;
+          
+        }
+        
+        
