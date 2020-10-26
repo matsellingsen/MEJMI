@@ -8,10 +8,10 @@ setInterval(function() {
             e.style.backgroundPosition = 'center top, center top, center top';
             break;
         case 1:
-            e.style.backgroundPosition = window.innerWidth + 'px top, center top, center top';
+            e.style.backgroundPosition = screen.width + 'px top, center top, center top';
             break;
         case 2:
-            e.style.backgroundPosition = window.innerWidth + 'px top, ' + window.innerWidth + 'px top, center top';
+            e.style.backgroundPosition = screen.width + 'px top, ' + screen.width + 'px top, center top';
             break;
     }
     i++;    
