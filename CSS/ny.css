@@ -281,22 +281,26 @@ img{
             color: #D2AA43;
             top: -25%;
         }
+        #faktatekstkontakt{
+            width: 50%;
+        }
         input, textarea {
             /*dimensjon av input felt*/
             font-family: Tahoma;
             font-size: 12pt;
-            height: 6vh;
-            width: 70%;
-            margin-bottom: 1vh;
+            height: 45px;
+            width: 85%;
+            margin-bottom: 20px;
         }
         #melding {
             /*dimensjon til melding felt*/
             height: 100px;
-            width: 70%;
+            width: 85%;
+            margin-bottom: 5px;
         }
         #send {
             /*dimensjon og posisjon av send-knapp*/
-            margin-left: 50%;
+            margin-left: 65%;
             width: 20%;
             border-radius: 18px;
             -moz-border-radius: 5px;
