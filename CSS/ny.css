@@ -423,13 +423,15 @@ img{
         
     .bildeGrafisk{
         width: 30%;
-        height: auto;
         background-color: white;
         margin-left: 3%;
         float: left;
-        width: 30%;
-        min-height: 220px;
-        height: auto;
+    }
+
+        
+    .bildeGrafisk:hover{
+        transition: 0.3s;
+        box-shadow: 0 50px 70px 10px rgba(0, 0, 0, 0.5)  
     }
 
     
