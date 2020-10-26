@@ -102,6 +102,9 @@ img{
         #Rfaktatekst{
             float: left;
         }
+        #Rfaktabildet{
+            width: 45%;
+        }
 
 
     /* FOOTER */
