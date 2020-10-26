@@ -110,19 +110,20 @@ function lillScroll(){
       }
       )*/
 }
-var hover = document.getElementById("drop");
-var dropdownBar = document.getElementById("dropdown");
-hover.addEventListener("mouseover", dropdown);
-function dropdown(){
-    dropdownBar.style.opacity = "95%";
-    //dropdownBar.style.visibility = "visible";
-}
-dropdownBar.addEventListener("mouseleave", dropout);
-function dropout(){
-    dropdownBar.style.opacity = "0%";
-   // dropdownBar.style.visibility = "visible";
-}
+
 // Eventlisteners
+    var hover = document.getElementById("drop");
+    var dropdownBar = document.getElementById("dropdown");
+    hover.addEventListener("mouseover", dropdown);
+    function dropdown(){
+        dropdownBar.style.opacity = "95%";
+    }
+
+    dropdownBar.addEventListener("mouseleave", dropout);
+    function dropout(){
+        dropdownBar.style.opacity = "0%";
+    }
+
     window.addEventListener("resize", resize);
     function resize(){
         dropdownBar.style.opacity = "0%";
@@ -131,17 +132,15 @@ function dropout(){
     }
     window.addEventListener("scroll", backgroundLink);
     function backgroundLink(){
+            if (window.hidden){
+                transformLinks();
+            }
             dropdownBar.style.opacity = "0%";
             linker.style.backgroundColor = "rgba("+255+","+255+","+255+","+0.95+")";
             linker.style.transition = "0,25s";
-
-
     }
     // klikker på navbaren, og animasjon til linker og navbar blir satt i gang
         canvas.addEventListener("click", transformLinks);
-
-//window.addEventListener("resize", resize());
-
 
 
 // Holder styr på om linkene er gjemt eller ikke
