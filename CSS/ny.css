@@ -17,7 +17,7 @@ img{
 	width: 100%;
 	height: auto;
 }
-.Sporsmal{
+.Spørsmal{
 	/* Posisjon av "vanlig" tekst på siden*/
 	/* må tydligvis ha denne for at KONTAKTOSS boksen nederst skal bli riktig */
 	text-align: center;
@@ -136,8 +136,7 @@ img{
             font-size: 20px;
             padding: 5px 20px;
         }
-        .BOKS{
-            /* Boksene til SEO vanlige spørsmål*/
+        .boksTilSpørsmål{
             text-align: left;
             background-color: white;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -399,11 +398,11 @@ img{
 /* SEO */
     /* VANLIGE SPØRSMÅL */
     /* PAKKER */
-    .underoverskrift{
+    .underoverskriftSEO{
         margin: 80px;
     }
     
-    .BOKS{
+    .bokserSEO{
         /* Boksene til SEO vanlige spørsmål*/
         text-align: left;
         background-color: white;
@@ -411,7 +410,7 @@ img{
         margin-bottom: 30px;
     }
     
-    .boks{
+    .tekstVanligeSpm{
         float: left;
         width: 50%;
         padding: 45px 10px 20px 80px;
