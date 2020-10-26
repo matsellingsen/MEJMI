@@ -362,6 +362,38 @@ img{
     #tekstPåNettsidedesign {
         top: 40%;
     }
+    
+    #sikkerhet, h2 h2>p{
+        text-align: center;
+    }
+
+    #sikkerhet h2{
+        margin-top: 10%;
+    }
+    
+    .sikkerhet h3, .lesMer{
+        color: #7AA1BC;
+    }
+    
+    .containerSikkerhet{
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        margin-bottom: 10%;
+    }
+    
+    .sikkerhet{
+        
+        height: 50%;
+        width: 20%;
+        margin: 3%;
+        text-align: center;
+    }
+    
+    .sikkerhet img{
+        height: 100px;
+        width: auto;
+    }
 
 /* GRAFISK PROFIL */
 
