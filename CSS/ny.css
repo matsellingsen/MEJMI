@@ -28,6 +28,7 @@ img{
             /* hovedoverskrift på hovedbilde */
             font-size: 52px;
             font-weight: 50;
+            text-shadow: 2px 2px 4px grey;
         }
         h2{
             /* underoverskrifter */
@@ -71,6 +72,8 @@ img{
             color: #FFFFFF;
             width: 100%;
             z-index: 1;
+            text-shadow: 2px 2px 4px grey;
+
         }
 
 
