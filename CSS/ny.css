@@ -173,6 +173,10 @@ img{
         }
 /* HOMEPAGE */
     /* TJENESTER */
+
+        .tjenester a{
+            text-decoration: none;
+        }
     
         #tjenester, h2 h2>p{
             text-align: center;
