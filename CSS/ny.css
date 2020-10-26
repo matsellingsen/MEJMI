@@ -376,10 +376,7 @@ img{
         margin-left: 0px;
     }
 
-    
-    /* Pakkene på SEO-siden */
     .boksTilGrafisk{
-        /* Elementet som de tre pakkene i SEO ligger inni */
         width: 90%;
         display: inline-block;
         text-align: center;
@@ -395,8 +392,8 @@ img{
         width: 30%;
         min-height: 220px;
         height: auto;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
     }
+
     
 
 /* SEO */
@@ -472,6 +469,7 @@ img{
         min-height: 220px;
         height: auto;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        height: 400px;
     }
           
     
