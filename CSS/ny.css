@@ -378,19 +378,17 @@ img{
 
     
     /* Pakkene på SEO-siden */
-    .boksTilGarfisk{
+    .boksTilGrafisk{
         /* Elementet som de tre pakkene i SEO ligger inni */
         width: 90%;
         display: inline-block;
         text-align: center;
-        margin: 50px 5% 50px 5%;
+        margin: 80px 5% 80px 5%;
     }
         
     .bildeGrafisk{
         width: 30%;
         height: auto;
-        margin-top: 100px;
-        margin-bottom: 200px;
         background-color: white;
         margin-left: 3%;
         float: left;
