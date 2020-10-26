@@ -293,7 +293,7 @@ img{
             margin-bottom: 20px;
         }
         #melding {
-            /*dimensjon til melding felt*/
+            /*dimensjon til meldingfelt*/
             height: 100px;
             width: 90%;
             margin-bottom: 5px;
@@ -308,7 +308,7 @@ img{
             background-color: #ffb404;
             color: white;
             margin-bottom: 50px;
-            
+            cursor: pointer;
         }  
         .form{
             width: 45%;
