@@ -177,6 +177,7 @@ img{
 
         .tjenester a{
             text-decoration: none;
+            color: inherit;
         }
     
         #tjenester, h2 h2>p{
