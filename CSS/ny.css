@@ -181,7 +181,7 @@ img{
 /* HOMEPAGE */
     /* TJENESTER */
     
-        #tjenester h2, p{
+        #tjenester, h2 h2>p{
             text-align: center;
         }
 
