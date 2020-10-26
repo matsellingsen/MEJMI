@@ -516,7 +516,7 @@ img{
 
 
 /*NAVBAR*/
-       
+
     #links > a:not(#logo){
         color: rgb(3,57,79);
         visibility: hidden;
@@ -538,5 +538,33 @@ img{
         width: 100%;
         position: fixed;  
     }
+    #dropdown{
+        z-index: -1;
+        top: -4%;
+        opacity: 0;
+        position: absolute;
+        margin-left: 22%;
+        width: 8%;
+        padding-bottom: 2%;
+        padding-top: 4%;
+        padding-right: 1%;
+        background-color: white;
+        transition: 0.1s;
+
+    }
+    #dropdown > a{
+    display: block;
+    opacity: 100%;
+    
+    font-size: 50%;
+    padding-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: right;
+    color: rgb(3,57,79); 
+    text-decoration: none;
+    } 
+
+  
         
         

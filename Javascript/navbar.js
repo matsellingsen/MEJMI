@@ -18,11 +18,10 @@ canvas.style.top = "3%";
 canvas.style.right = "3%";
 canvas.width = (window.innerWidth *0.03);
 canvas.height = (window.innerWidth *0.0385);
-console.log(canvas.height)
+
 //canvas.style.border = "1px solid black";
 
 gigg = parseInt((canvas.height/3.93));
-console.log("gigg:", gigg);
 
 for (i=1; i <= 3; i++){
     var fromX = 0;
@@ -96,59 +95,97 @@ function drawLine(fromX, fromY, toX, toY) {
     } 
 }
 var check = 0
-window.addEventListener("scroll", backgroundLink);
 
-window.addEventListener("resize", resize);
+linker.children[1].addEventListener("click", lillScroll);
 
-function resize(){
-    canvasLines = [];
-    canvasNavbar();
+function lillScroll(){
+    console.log("ahaha")
+    var tjenester = document.getElementById("tjenester");
+    var dest = tjenester.offsetHeight*0.90;
+    window.scrollTo(0, 300);
+   /*
+    window.scroll({
+        top: dest,
+        behavior: 'smooth',
+      }
+      )*/
 }
 
-function backgroundLink(){
-        linker.style.backgroundColor = "rgba("+255+","+255+","+255+","+0.95+")";
-        linker.style.transition = "0,25s";
+// Eventlisteners
+    var hover = document.getElementById("drop");
+    var dropdownBar = document.getElementById("dropdown");
+    hover.addEventListener("mouseover", dropdown);
+    function dropdown(){
+        dropdownBar.style.opacity = "95%";
+    }
+
+    dropdownBar.addEventListener("mouseleave", dropout);
+    function dropout(){
+        dropdownBar.style.opacity = "0%";
+    }
+
+    window.addEventListener("resize", resize);
+    function resize(){
+        dropdownBar.style.opacity = "0%";
+        canvasLines = [];
+        canvasNavbar();
+    }
+    window.addEventListener("scroll", backgroundLink);
+    function backgroundLink(){
+            if (window.hidden){
+                transformLinks();
+            }
+            dropdownBar.style.opacity = "0%";
+            linker.style.backgroundColor = "rgba("+255+","+255+","+255+","+0.95+")";
+            linker.style.transition = "0,25s";
+    }
+    // klikker på navbaren, og animasjon til linker og navbar blir satt i gang
+        canvas.addEventListener("click", transformLinks);
 
 
-}
-
-//window.addEventListener("resize", resize());
-
-
-// klikker på navbaren, og animasjon til linker og navbar blir satt i gang
-canvas.addEventListener("click", transformLinks);
 // Holder styr på om linkene er gjemt eller ikke
-window.hidden = true;
+    window.hidden = true;
+// Boolean for at navbar ikke kan klikkes midt i animasjon
+    midAnimasjon = true;
 function transformLinks(){
-        console.log(canvas)
-    if (window.hidden){
-        window.hidden = false;
-        for (i=1; i < linker.children.length; i++){
-            linker.children[i].style.marginLeft = "11%";
-            linker.children[i].style.visibility = "visible";
-            linker.children[i].style.opacity = "100";
-            linker.children[i].style.transition = "0.35s";
-        }   
+    if (midAnimasjon){
+        if (window.hidden){
+            window.hidden = false;
+            for (i=1; i < linker.children.length; i++){
+                if (i > 1 && i < 3){
+                    i = 3;
+                }
+                linker.children[i].style.marginLeft = "11%";
+                linker.children[i].style.visibility = "visible";
+                linker.children[i].style.opacity = "100";
+                linker.children[i].style.transition = "0.35s";
+            }   
+        }
+        else if (window.hidden == false){
+            linker.style.backgroundColor = "";
+            window.hidden = true;
+            for (i=1; i < linker.children.length-1; i++){
+                if (i > 1 && i < 3){
+                    i = 3;
+                }
+                linker.children[i].style.marginLeft = "14%";
+                linker.children[i].style.visibility = "hidden";
+                linker.children[i].style.opacity = "0";
+                linker.children[i].style.transition = "0.35s";
+            }    
+        }
+    // boolean for å bestemme om navbar-animasjon skal kjøre eller ikkex
+        navbarBool = true;
+        speedx2 = true;
+        midAnimasjon = false;
+        
+        rotateNavbar();
     }
-    else if (window.hidden == false){
-        linker.style.backgroundColor = "";
-        window.hidden = true;
-        for (i=1; i < linker.children.length-1; i++){
-            linker.children[i].style.marginLeft = "14%";
-            linker.children[i].style.visibility = "hidden";
-            linker.children[i].style.opacity = "0";
-            linker.children[i].style.transition = "0.35s";
-        }    
-    }
-// boolean for å bestemme om navbar-animasjon skal kjøre eller ikkex
-    navbarBool = true;
-    speedx2 = true;
-    rotateNavbar();
 }
 
 // Setter i gang animasjon til navbar
 function rotateNavbar(){
-   console.log("hmm")
+   
 // settes true hver gang navbar blir klikket på
     if (navbarBool == true){
         requestAnimationFrame(rotateNavbar);
@@ -158,7 +195,7 @@ function rotateNavbar(){
             
             canvasLines[i].updateNavbar();
             if (ferdigAnimert >= 3){
-                
+                midAnimasjon = true;
                 navbarBool = false;
                 canvasLines = [];
                 canvasNavbar()

@@ -10,14 +10,19 @@
     <!--NAVBAR-->
     <section id="links">
         <a id="logo" href="hovedside.html">MEJMI </a>
-        <a href="https://www.w3schools.com/">Tjenester</a>
+        <a href="hovedside.html#tjenester" id="drop">Tjenester
+            <div id="dropdown">
+            <a href=nettsidedesign.html>Nettside design</a>
+            <a href="grafisk_profil.html">Grafisk profil</a>
+            <a href="seo.html">SEO</a>
+        </div>
+        </a>
         <a href="referanser.html">Referanser</a>
         <a href="kontakt_oss.html">Kontakt</a>
         <a href="hovedside.html#omOss">Om oss</a>
         <canvas id="navbar"></canvas>
     </section>
 
-    <script src="./Javascript/navbar.js"></script>
     
     <!-- HOVEDBILDE -->
     <div class="hovedbilde" style="background-image: url('images/kontaktBilde.jpg');"></div>
@@ -122,5 +127,8 @@
     <!-- FOOTER -->
     <footer id="foot"></footer>
     <script src="Javascript/footer.js"></script>
+
+    	<!--NAVBAR-->	
+        <script src="./Javascript/navbar.js"></script>
 </body>
 </html>
