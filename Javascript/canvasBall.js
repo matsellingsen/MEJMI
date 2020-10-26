@@ -1,20 +1,27 @@
 var canvasBouncing = document.getElementById("bouncing");
-
-console.log("høyde",window.innerHeight)
-    const tjenester = document.getElementById("tjenester");
+function getPosition(){
+    var tjenester = document.getElementById("tjenester");
     const position = tjenester.getBoundingClientRect();
-    const width = tjenester.offsetWidth;
-    const height = tjenester.offsetHeight;
+    var width = tjenester.offsetWidth;
+    var height = tjenester.offsetHeight;
     canvasBouncing.style.position = "absolute";
     canvasBouncing.style.top = "140%";
     canvasBouncing.style.zIndex = "-1";
     canvasBouncing.width = width;
     canvasBouncing.height = height*0.75;  
     //canvasBouncing.style.border = "1px solid black";  
-var cBouncing = canvasBouncing.getContext("2d");
-var circleAmount = 6;
+    }
+    getPosition();
+    var cBouncing = canvasBouncing.getContext("2d");
+    var circleAmount = 6;
 
+window.addEventListener("resize", resizer);
 
+function resizer(){
+    circleArray = [];
+    getPosition(); 
+    leggTilSirkel(); 
+}
 
 function Circle(a, d, ax, dy, radius) { 
     this.a = a;
@@ -28,7 +35,7 @@ function Circle(a, d, ax, dy, radius) {
         cBouncing.beginPath();
         cBouncing.arc(this.a , this.d, this.radius, 0, Math.PI * 2, false );
         //c.lineWidth = 1
-        cBouncing.fillStyle = "#ff6600";
+        cBouncing.fillStyle = "#E9B56A";
         cBouncing.strokeStyle = "white";
         
         
@@ -97,8 +104,7 @@ function animate() {
     }
   
  
-        
-    animate();
+animate();
     
    
   
