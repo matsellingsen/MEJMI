@@ -84,17 +84,15 @@ img{
             color: white;
             width: 100%;
             height: auto;
-            display: inline-block;
+            display: flex;
+            flex-wrap: nowrap;
             background-color: rgba(66,122,161, 70%);
         }
         .faktabildet{
             width: 40%;
-            float: left;
+            height: auto;
         }
-        #Rfaktabildet{
-            padding: 0 0 0 10px;
-            float: right;
-        }
+
         .faktatekst{
             width: 60%;
             height: auto;
@@ -104,6 +102,7 @@ img{
         #Rfaktatekst{
             float: left;
         }
+
 
     /* FOOTER */
         footer{
@@ -279,30 +278,34 @@ img{
             color: #D2AA43;
             top: -25%;
         }
-        input {
+        input, textarea {
             /*dimensjon av input felt*/
             font-family: Tahoma;
             font-size: 12pt;
             height: 6vh;
-            width: 30vw;
+            width: 70%;
             margin-bottom: 1vh;
         }
         #melding {
             /*dimensjon til melding felt*/
-            height: 15vh;
-            width: 30vw;
-            margin-left: 59vw;
+            height: 100px;
+            width: 70%;
         }
         #send {
             /*dimensjon og posisjon av send-knapp*/
-            margin-left: 79vw;
-            width: 10vw;
+            margin-left: 50%;
+            width: 20%;
             border-radius: 18px;
             -moz-border-radius: 5px;
             border: none;
             background-color: #E9B56A;
             color: white;
+            margin-bottom: 50px;
         }  
+        .form{
+            width: 45%;
+            margin-top: 90px;
+        }
 
         
 /* REFERANSER */
@@ -467,23 +470,6 @@ img{
         clear: both;
     }
 
-    
-    /* Alt over posisjonering og størrelser på SEO boksene*/
-
-    .Lfakta{
-        margin-top: -5px;
-        color: rgb(66,122,161);
-        width: 100%;
-        height: auto;
-        display: inline-block;
-        background-color: white;
-        padding-left: 0px;
-    }
-    
-    #SEOfakta{
-        color: white;
-        background-color: rgba(66,122,161,70%);
-    }
 
     /* Pakkene på SEO-siden */
     .boksTilPakker{
