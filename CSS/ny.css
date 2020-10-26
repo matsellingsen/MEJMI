@@ -278,7 +278,7 @@ img{
         }
         .ansatt p:nth-of-type(1){
             /*Farge på jobb-stillingen*/
-            color: #D2AA43;
+            color: #ffb404;
             top: -25%;
         }
         #faktatekstkontakt{
@@ -289,25 +289,26 @@ img{
             font-family: Tahoma;
             font-size: 12pt;
             height: 45px;
-            width: 85%;
+            width: 90%;
             margin-bottom: 20px;
         }
         #melding {
             /*dimensjon til melding felt*/
             height: 100px;
-            width: 85%;
+            width: 90%;
             margin-bottom: 5px;
         }
         #send {
             /*dimensjon og posisjon av send-knapp*/
-            margin-left: 65%;
+            margin-left: 70%;
             width: 20%;
             border-radius: 18px;
             -moz-border-radius: 5px;
             border: none;
-            background-color: #E9B56A;
+            background-color: #ffb404;
             color: white;
             margin-bottom: 50px;
+            
         }  
         .form{
             width: 45%;
