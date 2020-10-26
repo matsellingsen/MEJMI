@@ -43,10 +43,6 @@ img{
             line-height: 1.5em;
 
         }
-        li{
-            font-size: 10px;
-            list-style-type: "-";
-        }
 
     /* HOVEDBILDE */
         /*HOVEDBILDE / HOMEPAGE / SLIDESHOW */
@@ -89,8 +85,6 @@ img{
         }
         .faktabildet{
             width: 40%;
-            height: auto;
-            padding: 0 10px 0 0;
             float: left;
         }
         #Rfaktabildet{
@@ -360,15 +354,11 @@ img{
 
 
 /* NETTSIDEDESIGN */
-    /* "HVA INNEBÆRER DET Å LAGE EN NETTSIDE?" */
-    /* "CSS" */
+    #tekstPåNettsidedesign {
+        top: 40%;
+    }
 
 /* GRAFISK PROFIL */
-    #sosiale1, #sosiale2, #sosiale3 {
-        width: 30%;
-        height: auto;
-        min-height: 0px;
-    }
 
     #sosiale1 p, #sosiale2 p, #sosiale3 p {
         color: white;
@@ -381,40 +371,30 @@ img{
         margin-left: 0px;
     }
 
-    .blokk{
+    
+    /* Pakkene på SEO-siden */
+    .boksTilGarfisk{
         /* Elementet som de tre pakkene i SEO ligger inni */
         width: 90%;
         display: inline-block;
         text-align: center;
         margin: 50px 5% 50px 5%;
     }
-    
-    .blokk1, .blokk2, .blokk3{
-        margin-top: 50px;
-        margin-bottom: 80px;
+        
+    .bildeGrafisk{
+        width: 30%;
+        height: auto;
+        margin-top: 100px;
+        margin-bottom: 200px;
         background-color: white;
         margin-left: 3%;
         float: left;
         width: 30%;
         min-height: 220px;
         height: auto;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-    /* Tre over er plassering osv av de tre pakkene*/    
-
-    .blokk1:hover, .blokk2:hover, .blokk3:hover{
-        /*Hover til pakkene på SEO */
-        transition: 0.5s;
-        box-shadow: 10px 10px 40px rgba(0,0,0, 0.3);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
     }
     
-    #sosiale:hover{
-        /* Slik at de sosiale blokkene på grafisk design ikke får hover*/
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-    /*Tre over: Grafisk design - De tre blokkene om Logo, Sosiale medier og Epost*/
-
-    /* FOR AT KUNDEN SKAL HUSKE DEG */
 
 /* SEO */
     /* VANLIGE SPØRSMÅL */
@@ -470,31 +450,66 @@ img{
         background-color: rgba(66,122,161,70%);
     }
 
-
-
-    /*NAVBAR*/
-       
-        #links > a:not(#logo){
-            color: rgb(3,57,79);
-            visibility: hidden;
-            text-decoration: none;
-            margin-left: 14%;       
-        }
-        #logo{
-            font-family:  sans-serif,Verdana, Geneva, Tahoma;
-            font-size: xx-large;
-            letter-spacing: 5px;
-            text-decoration: none;
-            color: rgb(3,57,79);
-            margin-left: 3%;
-        }
-        #links {
-            padding-top: 2%;
-            padding-bottom: 2%;
-            z-index: 2;
-            width: 100%;
-            position: fixed;
+    /* Pakkene på SEO-siden */
+    .boksTilPakker{
+        /* Elementet som de tre pakkene i SEO ligger inni */
+        width: 90%;
+        display: inline-block;
+        text-align: center;
+        margin: 50px 5% 50px 5%;
+    }
+        
+    .pakkerSEO{
+        margin-bottom: 80px;
+        padding: 20px;
+        background-color: white;
+        margin-left: 3%;
+        float: left;
+        width: 30%;
+        min-height: 220px;
+        height: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
           
-        }
+    
+    .pakkerSEO:hover{
+        /*Hover til pakkene på SEO */
+        transition: 0.5s;
+        box-shadow: 10px 10px 40px rgba(0,0,0, 0.3);
+    }
+
+    li{
+        font-size: 15px;
+        list-style-position: inside;
+        text-align: left;
+        padding-left: 25%;
+    }
+
+
+
+
+/*NAVBAR*/
+       
+    #links > a:not(#logo){
+        color: rgb(3,57,79);
+        visibility: hidden;
+        text-decoration: none;
+        margin-left: 14%;       
+    }
+    #logo{
+        font-family:  sans-serif,Verdana, Geneva, Tahoma;
+        font-size: xx-large;
+        letter-spacing: 5px;
+        text-decoration: none;
+        color: rgb(3,57,79);
+        margin-left: 3%;
+    }
+    #links {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        z-index: 2;
+        width: 100%;
+        position: fixed;  
+    }
         
         
