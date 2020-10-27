@@ -1,7 +1,6 @@
 var i = 1
 setInterval(function() {
     bilde = document.getElementById('hovedbilde')
-    console.log(bilde)
     switch (i) {
         case 0:
             bilde.style.backgroundImage = "url('Images/referanser/referanse1.jpg')"
