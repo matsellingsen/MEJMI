@@ -161,6 +161,9 @@ img{
             .tekstPåBilde h1{
                 font-size: 30px
             }
+            h3{
+                font-size: 21px;
+            }
             p{
                 font-size: 15px;
             }
@@ -169,6 +172,9 @@ img{
         @media screen and (max-width: 700px){
             .tekstPåBilde h1{
                 font-size: 20px
+            }
+            h3{
+                font-size: 18px;
             }
             p{
                 font-size: 15px;
