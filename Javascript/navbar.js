@@ -9,24 +9,28 @@ var canvasLines = [];
 // farge på navbar
 colorNavbar = "#03394f";
 // necessary things to be set on window.onload
+/*
     window.onload = function(){
         for (i=1; i < linker.children.length-1; i++){
             if (i > 1 && i < 3){
                 i = 3;
             }
+            linker.style.transition = "0s"
+            linker.children[i].style.opacity = "0%";
             if (i == 1){
-                linker.children[i].style.marginLeft = "27vw";
+                linker.children[i].style.marginLeft = "26vw";
             }
             else if(i==3){
-                linker.children[i].style.marginLeft = "45vw";
+                linker.children[i].style.marginLeft = "44vw";
             }
             else if (i == 4){
-                linker.children[i].style.marginLeft = "60vw";
+                linker.children[i].style.marginLeft = "62vw";
             }
             else if (i == 5){
-                linker.children[i].style.marginLeft = "75vw";
+                linker.children[i].style.marginLeft = "80vw";
             }
-    }}
+            
+    }} */
 
 function canvasNavbar(){
 
@@ -167,6 +171,7 @@ function lillScroll(){
 // Boolean for at navbar ikke kan klikkes midt i animasjon
     midAnimasjon = true;
 function transformLinks(){
+    dropdownBar.style.opacity = "0%";
     if (midAnimasjon){
         if (window.hidden){
             window.hidden = false;
@@ -174,18 +179,18 @@ function transformLinks(){
                 if (i > 1 && i < 3){
                     i = 3;
                 }
-            // Gjorde linkene position absolute, så da må posisjoneringen gjøres slik..:
+            // Gjorde linkene position: absolute, så da må posisjoneringen gjøres slik..:
                 if (i == 1){
-                    linker.children[i].style.marginLeft = "25vw";
+                    linker.children[i].style.marginLeft = "24vw";
                 }
                 else if(i==3){
-                    linker.children[i].style.marginLeft = "43vw";
+                    linker.children[i].style.marginLeft = "42vw";
                 }
                 else if (i == 4){
-                    linker.children[i].style.marginLeft = "58vw";
+                    linker.children[i].style.marginLeft = "60vw";
                 }
                 else if (i == 5){
-                    linker.children[i].style.marginLeft = "73vw";
+                    linker.children[i].style.marginLeft = "78vw";
                 }
                 linker.children[i].style.visibility = "visible";
                 linker.children[i].style.opacity = "100";
@@ -200,16 +205,16 @@ function transformLinks(){
                     i = 3;
                 }
                 if (i == 1){
-                    linker.children[i].style.marginLeft = "27vw";
+                    linker.children[i].style.marginLeft = "26vw";
                 }
                 else if(i==3){
-                    linker.children[i].style.marginLeft = "45vw";
+                    linker.children[i].style.marginLeft = "44vw";
                 }
                 else if (i == 4){
-                    linker.children[i].style.marginLeft = "60vw";
+                    linker.children[i].style.marginLeft = "62vw";
                 }
                 else if (i == 5){
-                    linker.children[i].style.marginLeft = "75vw";
+                    linker.children[i].style.marginLeft = "80vw";
                 }
                
                 linker.children[i].style.visibility = "hidden";
