@@ -2,7 +2,7 @@
 var i;
 var out = document.getElementById("foot");
 var args = ["Brobekkveien 80A, 0582 TRD", "910 03 270 | 922 16 042", "post@mejmimedia.no", "© 2020 | MEJMI • All rights reserved"];
-var kilde = ["./Images/FACE_gul.png", "./Images/INSTA_gul.png", "./Images/LINKEDIN_gul.png", "./Images/TWITTER_gul.png"];
+var kilde = ["./Images/footer/FACE_gul.png", "./Images/footer/INSTA_gul.png", "./Images/footer/LINKEDIN_gul.png", "./Images/footer/TWITTER_gul.png"];
 var referanse = ["https://www.facebook.com/MEJMI-webdesign-113757423838059", "https://www.instagram.com/mejmi_webdesign/", "https://www.linkedin.com/in/mejmi-webdesign-2665841b8/", "https://www.twitter.com"];
 function displayArgs() {
     "use strict";
