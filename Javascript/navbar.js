@@ -8,14 +8,32 @@ var canvasLines = [];
 // Kan evt ta vekk denne funksjonen og gjøre de hidden i vanlig css
 // farge på navbar
 colorNavbar = "#03394f";
-
+// necessary things to be set on window.onload
+    window.onload = function(){
+        for (i=1; i < linker.children.length-1; i++){
+            if (i > 1 && i < 3){
+                i = 3;
+            }
+            if (i == 1){
+                linker.children[i].style.marginLeft = "27vw";
+            }
+            else if(i==3){
+                linker.children[i].style.marginLeft = "45vw";
+            }
+            else if (i == 4){
+                linker.children[i].style.marginLeft = "60vw";
+            }
+            else if (i == 5){
+                linker.children[i].style.marginLeft = "75vw";
+            }
+    }}
 
 function canvasNavbar(){
 
 ferdigAnimert = 0;
 canvas.style.position = "fixed";
-canvas.style.top = "3%";
-canvas.style.right = "3%";
+canvas.style.top = "1vw";
+canvas.style.right = "3vw";
 canvas.width = (window.innerWidth *0.03);
 canvas.height = (window.innerWidth *0.0385);
 
@@ -95,22 +113,20 @@ function drawLine(fromX, fromY, toX, toY) {
     } 
 }
 var check = 0
-
+/*
 linker.children[1].addEventListener("click", lillScroll);
-
 function lillScroll(){
-    console.log("ahaha")
     var tjenester = document.getElementById("tjenester");
     var dest = tjenester.offsetHeight*0.90;
     window.scrollTo(0, 300);
-   /*
+   
     window.scroll({
         top: dest,
         behavior: 'smooth',
       }
-      )*/
+      )
 }
-
+*/
 // Eventlisteners
     var hover = document.getElementById("drop");
     var dropdownBar = document.getElementById("dropdown");
@@ -124,11 +140,14 @@ function lillScroll(){
         dropdownBar.style.opacity = "0%";
     }
 
+
     window.addEventListener("resize", resize);
-    function resize(){
+    function resize(){ 
         dropdownBar.style.opacity = "0%";
         canvasLines = [];
         canvasNavbar();
+  
+        
     }
     window.addEventListener("scroll", backgroundLink);
     function backgroundLink(){
@@ -155,7 +174,19 @@ function transformLinks(){
                 if (i > 1 && i < 3){
                     i = 3;
                 }
-                linker.children[i].style.marginLeft = "11%";
+            // Gjorde linkene position absolute, så da må posisjoneringen gjøres slik..:
+                if (i == 1){
+                    linker.children[i].style.marginLeft = "25vw";
+                }
+                else if(i==3){
+                    linker.children[i].style.marginLeft = "43vw";
+                }
+                else if (i == 4){
+                    linker.children[i].style.marginLeft = "58vw";
+                }
+                else if (i == 5){
+                    linker.children[i].style.marginLeft = "73vw";
+                }
                 linker.children[i].style.visibility = "visible";
                 linker.children[i].style.opacity = "100";
                 linker.children[i].style.transition = "0.35s";
@@ -168,7 +199,19 @@ function transformLinks(){
                 if (i > 1 && i < 3){
                     i = 3;
                 }
-                linker.children[i].style.marginLeft = "14%";
+                if (i == 1){
+                    linker.children[i].style.marginLeft = "27vw";
+                }
+                else if(i==3){
+                    linker.children[i].style.marginLeft = "45vw";
+                }
+                else if (i == 4){
+                    linker.children[i].style.marginLeft = "60vw";
+                }
+                else if (i == 5){
+                    linker.children[i].style.marginLeft = "75vw";
+                }
+               
                 linker.children[i].style.visibility = "hidden";
                 linker.children[i].style.opacity = "0";
                 linker.children[i].style.transition = "0.35s";
