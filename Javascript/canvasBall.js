@@ -35,7 +35,7 @@ function Circle(a, d, ax, dy, radius) {
         cBouncing.beginPath();
         cBouncing.arc(this.a , this.d, this.radius, 0, Math.PI * 2, false );
         //c.lineWidth = 1
-        cBouncing.fillStyle = "#E9B56A";
+        cBouncing.fillStyle = "#fcc201";
         cBouncing.strokeStyle = "white";
         
         
