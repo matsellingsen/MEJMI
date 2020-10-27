@@ -19,7 +19,6 @@ img{
 }
 .Spørsmal{
 	/* Posisjon av "vanlig" tekst på siden*/
-	/* må tydligvis ha denne for at KONTAKTOSS boksen nederst skal bli riktig */
 	text-align: center;
 	margin: 120px 5%;
 }
@@ -164,6 +163,9 @@ img{
             h3{
                 font-size: 21px;
             }
+            h2{
+                font-size: 18px;
+            }
             p{
                 font-size: 15px;
             }
@@ -231,13 +233,9 @@ img{
         }
         .vårt_team h2 {
             /*Posisjon av h2 "Vårt team"*/
-            font-size: 36pt;
             margin-top: -30%;
         }
-        .vårt_team p {
-            /*posisjon av undertekst til vårt team*/
-            font-size: 24pt;
-        }
+        
         .konteiner {
             width: 90vw;
             margin-top: -10%;
