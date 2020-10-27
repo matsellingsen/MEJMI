@@ -300,16 +300,23 @@ img{
         }
         #send {
             /*dimensjon og posisjon av send-knapp*/
-            margin-left: 70%;
-            width: 20%;
+            margin-left: 65%;
+            width: 10vw;
             border-radius: 18px;
-            -moz-border-radius: 5px;
             border: none;
             background-color: #ffb404;
             color: white;
+            margin-top: 20px;
             margin-bottom: 50px;
             cursor: pointer;
         }  
+        #output {
+            font-size: 0.9em;
+            text-shadow: 2px 2px 4px grey;
+            position: absolute;
+            margin-top: 25px;
+        }
+
         .form{
             width: 45%;
             margin-top: 90px;
