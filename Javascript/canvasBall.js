@@ -84,7 +84,7 @@ var circleArray = [];
 // setter posisijon, størrelse og bevegelsesfart til sirkel 
 function leggTilSirkel(){
 for (i = 0; i < circleAmount; i++){
-var radius = 30;
+var radius = (window.innerWidth/50);
 var a = Math.random() * (canvasBouncing.width - radius * 2) + radius;
 var d = Math.random() * (canvasBouncing.height - radius * 2) + radius;
 var ax = (Math.random() - 0.5)*0.5;
