@@ -52,9 +52,9 @@ img{
             background-position: center, center, center;
             background-size: cover, cover, cover;
             background-repeat: no-repeat, no-repeat, no-repeat;
-            background-image: url(../Images/referanser.jpg), url(../Images/homepage/hovedbilde2.jpg), url(../Images/homepage/hovedbilde3.jpg);
+            background-image: url(../Images/referanse1.jpg);
             z-index: -1;
-            transition: background 1s ease;
+            transition: background 1.3s ease-in;
         }
         
         /* HOVEDBILDE / HOMEPAGE */
