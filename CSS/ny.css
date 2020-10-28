@@ -98,29 +98,52 @@ img{
 
 
     /* BLÅ FAKTABOKS / OM OSS / BRANDING */
-        .Rfakta{
-            padding-left: 20px;
+        .Rfakta {
             color: white;
             width: 100%;
             height: auto;
             display: flex;
             flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
             background-color: rgba(66,122,161, 70%);
         }
+        .Lfakta{
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
         .faktabildet{
-            width: 40%;
-            height: auto;
+            width: 550px;
         }
 
         .faktatekst{
-            width: 60%;
+            width: 700px;
             height: auto;
-            padding: 2em 3em;
-            float: right;
+            padding-left: 70px;
+            padding-right: 50px;
         }
-        #Rfaktatekst{
-            float: left;
+
+        #faktaHovedside{
+            width: 750px;
+            margin-bottom: -5px;
         }
+        #faktaSEO{
+            margin-bottom: -4px;
+        }
+
+    
+        @media screen and (max-width: 1050px){
+            .faktabildet{
+                display: none;
+            }
+            .faktatekst{
+                margin-top: 50px;
+                margin-bottom: 50px;
+                width: 100%;
+            }
+        }
+
 
 
 
@@ -172,6 +195,9 @@ img{
             .tekstPåBilde h1{
                 font-size: 40px
             }
+            h2{
+                font-size: 30px;
+            }
             p{
                 font-size: 20px;
             }
@@ -181,14 +207,17 @@ img{
             .tekstPåBilde h1{
                 font-size: 30px
             }
+            h1{
+                font-size: 30px;
+            }
             h3{
-                font-size: 21px;
+                font-size: 25px;
             }
             h2{
-                font-size: 18px;
+                font-size: 25px;
             }
             p{
-                font-size: 15px;
+                font-size: 18px;
             }
         }
 
@@ -196,8 +225,14 @@ img{
             .tekstPåBilde h1{
                 font-size: 20px
             }
+            h1{
+                font-size: 28px;
+            }
             h3{
                 font-size: 18px;
+            }
+            h2{
+                font-size: 20px;
             }
             p{
                 font-size: 15px;
@@ -319,27 +354,49 @@ img{
             color: #ffb404;
             top: -25%;
         }
-        #faktatekstkontakt{
-            width: 50%;
+
+
+        /* Her styles kontakt-skjemaet */
+
+        .skjemaBoks{
+            padding-left: 20px;
+            color: white;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-evenly;
+            background-color: rgba(66,122,161, 70%);
         }
-        input, textarea {
+
+        .skjemaTekst{
+            width: 600px;
+            height: auto;
+            padding: 2em 2em;
+            float: right;
+        }
+
+        input {
             /*dimensjon av input felt*/
             font-family: Tahoma;
             font-size: 12pt;
             height: 45px;
-            width: 90%;
+            width: 100%;
             margin-bottom: 20px;
         }
         #melding {
             /*dimensjon til meldingfelt*/
+            font-family: Tahoma;
+            font-size: 12pt;
             height: 100px;
-            width: 90%;
+            width: 100%;
             margin-bottom: 5px;
         }
         #send {
             /*dimensjon og posisjon av send-knapp*/
-            margin-left: 65%;
-            width: 10vw;
+            margin-left: 70%;
+            width: 150px;
             border-radius: 18px;
             border: none;
             background-color: #ffb404;
@@ -349,15 +406,28 @@ img{
             cursor: pointer;
         }  
         #output {
-            font-size: 0.9em;
+            font-size: 20px;
             text-shadow: 2px 2px 4px grey;
             position: absolute;
             margin-top: 25px;
         }
 
         .form{
-            width: 45%;
-            margin-top: 90px;
+            width: 550px;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+        @media screen and (max-width: 700px){
+            .form{
+                width: 350px;
+            }
+            #send{
+                width: 100px;
+            }
+            #output{
+                font-size: 16px;
+                width: 200px;
+            }
         }
 
         
