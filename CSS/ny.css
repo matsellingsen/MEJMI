@@ -585,8 +585,7 @@ img{
         opacity: 0;
         text-decoration: none;
         font-size: 1.5vw;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        margin-left: 14%;       
+        font-family: Verdana, Geneva, Tahoma, sans-serif;       
     }
     #logo{
         position: absolute;
