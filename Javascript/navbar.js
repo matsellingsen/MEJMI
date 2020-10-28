@@ -168,7 +168,7 @@ function petiteShowLinks(){
        // linker.children[i].style.paddingTop = "2%"; 
         linker.children[i].style.fontSize = "2vw";
         linker.children[i].style.paddingBottom = "2%"; 
-        linker.children[i].style.marginLeft = "";
+        linker.children[i].style.marginLeft = "0%";
         linker.children[i].style.textAlign = "center";
        // linker.children[i].style.margin = "auto";
         linker.children[i].style.width = "100%";
