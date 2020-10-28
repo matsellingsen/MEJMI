@@ -16,7 +16,7 @@ function displayArgs() {
     var link = document.createTextNode("Kontakt oss"); 
     a.appendChild(link);  
     a.title = "Til kontaktsiden";  
-    a.href = "";  
+    a.href = "kontakt_oss.html";  
     out.appendChild(a);
     out.appendChild(document.createElement("br"));
     out.appendChild(document.createElement("br"));
