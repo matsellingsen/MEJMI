@@ -1,3 +1,22 @@
+/* INDEX: slik navigerer du i vår CSS ;-* */
+
+/* FELLES 
+    - FONT / FONTSTØRRELSER
+    - HOVEDBILDE / HOMEPAGE / SLIDESHOW 
+    - BLÅ FAKTABOKS / OM OSS / BRANDING 
+    - FOOTER 
+    - KONTAKT OSS / TA EN PRAT? 
+    - MEDIA  */
+
+/* HOMEPAGE */
+/* KONTAKT OSS */
+/* REFERANSER */
+/* NETTSIDEDESIGN */
+/* GRAFISK PROFIL */
+/* SEO */
+/* NAVBAR */
+
+
 /* FELLES */
 *{
     box-sizing: border-box;
@@ -52,7 +71,7 @@ img{
             background-position: center, center, center;
             background-size: cover, cover, cover;
             background-repeat: no-repeat, no-repeat, no-repeat;
-            background-image: url(../Images/referanser.jpg), url(../Images/homepage/hovedbilde2.jpg), url(../Images/homepage/hovedbilde3.jpg);
+            background-image: url(../Images/referanser.jpg);
             z-index: -1;
             transition: background 1s ease;
         }
@@ -102,6 +121,7 @@ img{
         #Rfaktatekst{
             float: left;
         }
+
 
 
     /* FOOTER */
@@ -161,6 +181,12 @@ img{
             .tekstPåBilde h1{
                 font-size: 30px
             }
+            h3{
+                font-size: 21px;
+            }
+            h2{
+                font-size: 18px;
+            }
             p{
                 font-size: 15px;
             }
@@ -170,6 +196,9 @@ img{
             .tekstPåBilde h1{
                 font-size: 20px
             }
+            h3{
+                font-size: 18px;
+            }
             p{
                 font-size: 15px;
             }
@@ -177,6 +206,11 @@ img{
 /* HOMEPAGE */
     /* TJENESTER */
 
+        .containerTjenester{
+            display: flex;
+            justify-content: center;
+            flex-flow: row wrap;
+        }
         .tjenester a{
             text-decoration: none;
             color: inherit;
@@ -194,19 +228,13 @@ img{
             color: #7AA1BC;
         }
         
-        .containerTjenester{
-            display: flex;
-            justify-content: center;
-            flex-flow: row wrap;
-            margin-bottom: 10%;
-        }
-        
-        .tjenester{
-            
+        .tjenester{ 
             height: 50%;
             width: 20%;
-            margin: 3%;
+            margin: 30px;
             text-align: center;
+            display: flex;
+            flex-wrap: wrap;
         }
         
         .tjenester img{
@@ -239,25 +267,30 @@ img{
             margin-right: 5vw;
             text-align: center;
             margin-bottom: 15vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
 
         }
         .ansatt {
             /*Posisjon av ansatt boksene*/
             background-color: white;
-            width: 25vw;
-            height: 30;
+            width: 290px;
+            height: 250px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             text-align: center;
-            margin-left: 25px;
-            margin-right: 25px;
+            margin-left: 30px;
+            margin-right: 30px;
             margin-bottom: 10%;
-            float: left;
+            flex-basis: auto;
+            flex-grow: 0;
+            
         }
         .ansatt .portrett {
             /*Posisjon av portrett*/
             margin: -10%;
-            width: 8vw;
-            height: auto;
+            width: 80px;
+            height: 85px;
 
         }
         .ansatt h4 {
@@ -275,33 +308,45 @@ img{
         }
         .ansatt p:nth-of-type(1){
             /*Farge på jobb-stillingen*/
-            color: #D2AA43;
+            color: #ffb404;
             top: -25%;
+        }
+        #faktatekstkontakt{
+            width: 50%;
         }
         input, textarea {
             /*dimensjon av input felt*/
             font-family: Tahoma;
             font-size: 12pt;
-            height: 6vh;
-            width: 70%;
-            margin-bottom: 1vh;
+            height: 45px;
+            width: 90%;
+            margin-bottom: 20px;
         }
         #melding {
-            /*dimensjon til melding felt*/
+            /*dimensjon til meldingfelt*/
             height: 100px;
-            width: 70%;
+            width: 90%;
+            margin-bottom: 5px;
         }
         #send {
             /*dimensjon og posisjon av send-knapp*/
-            margin-left: 50%;
-            width: 20%;
+            margin-left: 65%;
+            width: 10vw;
             border-radius: 18px;
-            -moz-border-radius: 5px;
             border: none;
-            background-color: #E9B56A;
+            background-color: #ffb404;
             color: white;
+            margin-top: 20px;
             margin-bottom: 50px;
+            cursor: pointer;
         }  
+        #output {
+            font-size: 0.9em;
+            text-shadow: 2px 2px 4px grey;
+            position: absolute;
+            margin-top: 25px;
+        }
+
         .form{
             width: 45%;
             margin-top: 90px;
@@ -480,19 +525,30 @@ img{
         display: inline-block;
         text-align: center;
         margin: 50px 5% 50px 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-        
+    .underoverskrift {
+        flex-basis: auto;
+        flex-grow: 0;
+        margin-right: 49vw;
+        margin-left: 51vw;
+
+    }
     .pakkerSEO{
         margin-bottom: 80px;
         padding: 20px;
         background-color: white;
         margin-left: 3%;
         float: left;
-        width: 30%;
-        min-height: 220px;
+        width: 290px;
+        
         height: auto;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        height: 400px;
+        
+        flex-basis: auto;
+        flex-grow: 0;
     }
           
     
@@ -521,7 +577,8 @@ img{
         opacity: 0;
         text-decoration: none;
         font-size: 1.5vw;
-        font-family:  sans-serif,Verdana, Geneva, Tahoma;    
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 14%;       
     }
     #logo{
         position: absolute;

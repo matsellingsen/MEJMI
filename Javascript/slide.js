@@ -1,16 +1,15 @@
 var i = 1
 setInterval(function() {
     bilde = document.getElementById('hovedbilde')
-    console.log(bilde)
     switch (i) {
         case 0:
-            bilde.style.backgroundImage = "url('Images/referanse1.jpg')"
+            bilde.style.backgroundImage = "url('Images/referanser/referanse1.jpg')"
             break
         case 1:
-            bilde.style.backgroundImage = "url('Images/referanse2.jpg')"
+            bilde.style.backgroundImage = "url('Images/referanser/referanse2.jpg')"
             break
         case 2:
-            bilde.style.backgroundImage = "url('Images/referanse3.jpg')"
+            bilde.style.backgroundImage = "url('Images/referanser/referanse3.jpg')"
     }
     i++
     if (i > 2) {
