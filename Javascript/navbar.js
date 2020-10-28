@@ -245,7 +245,6 @@ function grandShowLinks(){
         else if (i == 5){
             linker.children[i].style.marginLeft = "78vw";
         }
-        linker.style.backgroundColor = "";
         linker.children[i].style.backgroundColor = "";
         linker.children[i].style.visibility = "visible";
         linker.children[i].style.opacity = "100";
