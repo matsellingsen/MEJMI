@@ -282,6 +282,7 @@ function grandShowLinks(){
     function resize(){
         transition = false;
         if (window.innerWidth < 850){
+            logo.style.marginTop = "0.5vw";
             logo.style.fontSize = "5vw";
             logo.style.left = "10vw";
             linker.style.height = "10vw";
@@ -298,6 +299,7 @@ function grandShowLinks(){
             petiteNavbar();
         }
         else if (window.innerWidth >= 850){ 
+            logo.style.marginTop = "-0.5vw";
             logo.style.fontSize = "2.5vw";
             logo.style.left = "2vw";
             linker.style.height = "6vw";
