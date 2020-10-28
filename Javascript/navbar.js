@@ -245,7 +245,6 @@ function grandShowLinks(){
         else if (i == 5){
             linker.children[i].style.marginLeft = "78vw";
         }
-        linker.style.backgroundColor = "";
         linker.children[i].style.backgroundColor = "";
         linker.children[i].style.visibility = "visible";
         linker.children[i].style.opacity = "100";
@@ -331,8 +330,8 @@ function grandShowLinks(){
             }
            
     }
-    // klikker på navbaren, og animasjon til linker og navbar blir satt i gang
-        canvas.addEventListener("click", transformLinks);
+// klikker på navbaren, og animasjon til linker og navbar blir satt i gang
+    canvas.addEventListener("click", transformLinks);
 
 
 // Holder styr på om linkene er gjemt eller ikke
@@ -347,14 +346,14 @@ function transformLinks(){
         dropdownBar.style.opacity = "0%";
     if (midAnimasjon){
         if (window.hidden){
-            navbarClick = true;
+           // navbarClick = true;
             petiteShowLinks();
         }
         else if (window.hidden == false){
             window.hidden = true;
             console.log("hmmmm")
            // navbarClick = false;
-            linker.style.backgroundColor = "";
+           // linker.style.backgroundColor = "";
             petiteHideLinks();
            
         }
