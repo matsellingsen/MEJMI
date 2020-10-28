@@ -489,19 +489,30 @@ img{
         display: inline-block;
         text-align: center;
         margin: 50px 5% 50px 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-        
+    .underoverskrift {
+        flex-basis: auto;
+        flex-grow: 0;
+        margin-right: 49vw;
+        margin-left: 51vw;
+
+    }
     .pakkerSEO{
         margin-bottom: 80px;
         padding: 20px;
         background-color: white;
         margin-left: 3%;
         float: left;
-        width: 30%;
-        min-height: 220px;
+        width: 290px;
+        
         height: auto;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        height: 400px;
+        
+        flex-basis: auto;
+        flex-grow: 0;
     }
           
     
