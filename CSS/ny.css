@@ -1,3 +1,22 @@
+/* INDEX: slik navigerer du i vår CSS ;-* */
+
+/* FELLES 
+    - FONT / FONTSTØRRELSER
+    - HOVEDBILDE / HOMEPAGE / SLIDESHOW 
+    - BLÅ FAKTABOKS / OM OSS / BRANDING 
+    - FOOTER 
+    - KONTAKT OSS / TA EN PRAT? 
+    - MEDIA  */
+
+/* HOMEPAGE */
+/* KONTAKT OSS */
+/* REFERANSER */
+/* NETTSIDEDESIGN */
+/* GRAFISK PROFIL */
+/* SEO */
+/* NAVBAR */
+
+
 /* FELLES */
 *{
     box-sizing: border-box;
@@ -185,6 +204,11 @@ img{
 /* HOMEPAGE */
     /* TJENESTER */
 
+        .containerTjenester{
+            display: flex;
+            justify-content: center;
+            flex-flow: row wrap;
+        }
         .tjenester a{
             text-decoration: none;
             color: inherit;
@@ -202,19 +226,13 @@ img{
             color: #7AA1BC;
         }
         
-        .containerTjenester{
-            display: flex;
-            justify-content: center;
-            flex-flow: row wrap;
-            margin-bottom: 10%;
-        }
-        
-        .tjenester{
-            
+        .tjenester{ 
             height: 50%;
             width: 20%;
-            margin: 3%;
+            margin: 30px;
             text-align: center;
+            display: flex;
+            flex-wrap: wrap;
         }
         
         .tjenester img{
