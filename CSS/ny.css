@@ -38,6 +38,7 @@ img{
 }
 .Spørsmal{
 	/* Posisjon av "vanlig" tekst på siden*/
+	/* må tydligvis ha denne for at KONTAKTOSS boksen nederst skal bli riktig */
 	text-align: center;
 	margin: 120px 5%;
 }
@@ -70,7 +71,7 @@ img{
             background-position: center, center, center;
             background-size: cover, cover, cover;
             background-repeat: no-repeat, no-repeat, no-repeat;
-            background-image: url(../Images/referanser/referanse1.jpg);
+            background-image: url(../Images/referanser.jpg);
             z-index: -1;
             transition: background 1s ease;
         }
@@ -120,6 +121,7 @@ img{
         #Rfaktatekst{
             float: left;
         }
+
 
 
     /* FOOTER */
@@ -251,9 +253,13 @@ img{
         }
         .vårt_team h2 {
             /*Posisjon av h2 "Vårt team"*/
+            font-size: 36pt;
             margin-top: -30%;
         }
-        
+        .vårt_team p {
+            /*posisjon av undertekst til vårt team*/
+            font-size: 24pt;
+        }
         .konteiner {
             width: 90vw;
             margin-top: -10%;
@@ -297,33 +303,45 @@ img{
         }
         .ansatt p:nth-of-type(1){
             /*Farge på jobb-stillingen*/
-            color: #D2AA43;
+            color: #ffb404;
             top: -25%;
+        }
+        #faktatekstkontakt{
+            width: 50%;
         }
         input, textarea {
             /*dimensjon av input felt*/
             font-family: Tahoma;
             font-size: 12pt;
-            height: 6vh;
-            width: 70%;
-            margin-bottom: 1vh;
+            height: 45px;
+            width: 90%;
+            margin-bottom: 20px;
         }
         #melding {
-            /*dimensjon til melding felt*/
+            /*dimensjon til meldingfelt*/
             height: 100px;
-            width: 70%;
+            width: 90%;
+            margin-bottom: 5px;
         }
         #send {
             /*dimensjon og posisjon av send-knapp*/
-            margin-left: 50%;
-            width: 20%;
+            margin-left: 65%;
+            width: 10vw;
             border-radius: 18px;
-            -moz-border-radius: 5px;
             border: none;
-            background-color: #E9B56A;
+            background-color: #ffb404;
             color: white;
+            margin-top: 20px;
             margin-bottom: 50px;
+            cursor: pointer;
         }  
+        #output {
+            font-size: 0.9em;
+            text-shadow: 2px 2px 4px grey;
+            position: absolute;
+            margin-top: 25px;
+        }
+
         .form{
             width: 45%;
             margin-top: 90px;
@@ -543,7 +561,8 @@ img{
         opacity: 0;
         text-decoration: none;
         font-size: 1.5vw;
-        font-family:  sans-serif,Verdana, Geneva, Tahoma;    
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 14%;       
     }
     #logo{
         position: absolute;
