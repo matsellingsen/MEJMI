@@ -228,13 +228,24 @@ img{
             color: #7AA1BC;
         }
         
-        .tjenester{ 
-            height: 50%;
-            width: 20%;
-            margin: 30px;
-            text-align: center;
+        .containerTjenester{
+            margin-bottom: 10%;
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .tjenester{
+            
+            height: 50%;
+            width: 200px;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 10%;
+            text-align: center;
+            flex-basis: auto;
+            flex-grow: 0;
+
         }
         
         .tjenester img{
@@ -256,10 +267,7 @@ img{
             font-size: 36pt;
             margin-top: -30%;
         }
-        .vårt_team p {
-            /*posisjon av undertekst til vårt team*/
-            font-size: 24pt;
-        }
+       
         .konteiner {
             width: 90vw;
             margin-top: -10%;
