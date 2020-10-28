@@ -267,25 +267,30 @@ img{
             margin-right: 5vw;
             text-align: center;
             margin-bottom: 15vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
 
         }
         .ansatt {
             /*Posisjon av ansatt boksene*/
             background-color: white;
-            width: 25vw;
-            height: 30;
+            width: 290px;
+            height: 250px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             text-align: center;
-            margin-left: 25px;
-            margin-right: 25px;
+            margin-left: 30px;
+            margin-right: 30px;
             margin-bottom: 10%;
-            float: left;
+            flex-basis: auto;
+            flex-grow: 0;
+            
         }
         .ansatt .portrett {
             /*Posisjon av portrett*/
             margin: -10%;
-            width: 8vw;
-            height: auto;
+            width: 80px;
+            height: 85px;
 
         }
         .ansatt h4 {
