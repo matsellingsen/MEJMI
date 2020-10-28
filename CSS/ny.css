@@ -123,6 +123,9 @@ img{
             padding-left: 70px;
             padding-right: 50px;
         }
+        #hvitFaktatekst{
+            margin-left: 100px;
+        }
 
         #faktaHovedside{
             width: 750px;
@@ -141,6 +144,9 @@ img{
                 margin-top: 50px;
                 margin-bottom: 50px;
                 width: 100%;
+            }
+            #hvitFaktatekst{
+                margin-left: 0px;
             }
         }
 
@@ -507,15 +513,14 @@ img{
     .containerSikkerhet{
         display: flex;
         justify-content: center;
-        flex-flow: row wrap;
+        flex-wrap: wrap;
         margin-bottom: 10%;
     }
     
     .sikkerhet{
-        
         height: 50%;
-        width: 20%;
-        margin: 3%;
+        width: 300px;
+        margin: 40px;
         text-align: center;
     }
     
@@ -525,6 +530,10 @@ img{
     }
 
 /* GRAFISK PROFIL */
+
+    .tekstGrafisk{
+        margin: 100px;
+    }
 
     #sosiale1 p, #sosiale2 p, #sosiale3 p {
         color: white;
@@ -538,23 +547,24 @@ img{
     }
 
     .boksTilGrafisk{
-        width: 90%;
-        display: inline-block;
-        text-align: center;
-        margin: 80px 5% 80px 5%;
+        margin: 100px 50px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
         
     .bildeGrafisk{
-        width: 30%;
-        background-color: white;
-        margin-left: 3%;
-        float: left;
+        width: 350px;
+        height: 220px;
+        margin-bottom: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
 
         
     .bildeGrafisk:hover{
         transition: 0.3s;
-        box-shadow: 0 50px 70px 10px rgba(0, 0, 0, 0.5)  
+        transform: scale(1.1);   
     }
 
     
