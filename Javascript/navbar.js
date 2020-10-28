@@ -24,6 +24,7 @@ canvas.height = (window.innerWidth *0.0385);
 
 gigg = parseInt((canvas.height/3.93));
 
+
 for (i=1; i <= 3; i++){
     var fromX = 0;
     var fromY = canvas.height - (canvas.height-(gigg*i));
@@ -101,9 +102,19 @@ ferdigAnimert = 0;
 canvas.style.position = "fixed";
 canvas.style.top = "1vw";
 canvas.style.right = "10vw";
-canvas.width = (window.innerWidth *0.03*2);
-canvas.height = (window.innerWidth *0.0385*2);
-gigg = parseInt((canvas.height/3.93));
+// So that the navbar animation always works
+    if(window.innerWidth > 420){
+    canvas.width = (window.innerWidth *0.03*2);
+    canvas.height = (window.innerWidth *0.0385*2);
+    gigg = parseInt((canvas.height/3.93));
+    console.log(gigg, canvas.width, canvas.height)
+    }
+    else{
+        canvas.width = 25;
+        canvas.height = 32;
+        gigg = 8;
+    }
+
 
 for (i=1; i <= 3; i++){
     var fromX = 0;
@@ -253,22 +264,6 @@ function grandShowLinks(){
     window.hidden = false;
     navbarClick = true;
 }
-//var check = 0
-/*
-linker.children[1].addEventListener("click", lillScroll);
-function lillScroll(){
-    var tjenester = document.getElementById("tjenester");
-    var dest = tjenester.offsetHeight*0.90;
-    window.scrollTo(0, 300);
-   
-    window.scroll({
-        top: dest,
-        behavior: 'smooth',
-      }
-      )
-}
-*/
-// Eventlisteners
     var hover = document.getElementById("drop");
     var dropdownBar = document.getElementById("dropdown");
     hover.addEventListener("mouseover", dropdown);
