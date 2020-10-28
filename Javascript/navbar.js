@@ -280,6 +280,7 @@ function grandShowLinks(){
     window.addEventListener("resize", resize);
     var transition = true;
     function resize(){
+        dropdownBar.style.opacity = "0%";
         transition = false;
         if (window.innerWidth < 850){
             logo.style.marginTop = "0.5vw";
