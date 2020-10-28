@@ -203,18 +203,22 @@ img{
         }
         
         .containerTjenester{
-            display: flex;
-            justify-content: center;
-            flex-flow: row wrap;
             margin-bottom: 10%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         
         .tjenester{
             
             height: 50%;
-            width: 20%;
-            margin: 3%;
+            width: 200px;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 10%;
             text-align: center;
+            flex-basis: auto;
+            flex-grow: 0;
         }
         
         .tjenester img{
