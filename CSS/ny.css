@@ -681,10 +681,11 @@ img{
         opacity: 0;
         position: absolute;
         margin-left: 23vw;
-        width: 8vw;
+        width: 9vw;
+        padding-right: 0.5vw;
         padding-bottom: 2vw;
         padding-top: 6.5vw;
-        background-color: white;
+        background-color: rgb(3,57,79);
         transition: 0.1s;
 
     }
@@ -696,7 +697,7 @@ img{
     padding-top: 1vw;
     padding-bottom: 1vw;
     text-align: right;
-    color: rgb(3,57,79); 
+    color: white; 
     text-decoration: none;
     } 
 
