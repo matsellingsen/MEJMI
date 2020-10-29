@@ -352,8 +352,6 @@ img{
             color:  #03394F;
             font-size: 14pt;
             word-break: break-all;
-            margin-left: 2vw;
-            margin-right: 2vw;
         }
         .ansatt p:nth-of-type(1){
             /*Farge på jobb-stillingen*/
