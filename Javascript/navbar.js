@@ -1,7 +1,7 @@
 // Henter section-element som linkene ligger i, og henter spesifikt canvas-element
-const linker = document.getElementById("links");
-const canvas = document.getElementById("navbar");
-const c = canvas.getContext("2d");
+    const linker = document.getElementById("links");
+    const canvas = document.getElementById("navbar");
+    const c = canvas.getContext("2d");
 // Liste til å lagre linjene til navBar
     var canvasLines = [];
 // Funksjon for å tegne navbar når nettside er stor
