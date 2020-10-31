@@ -118,7 +118,7 @@
         }  
         window.hidden = true;  
     }
-    linkerPosPetite = ["", "8%", "", "13%", "16%", "19%"]
+    linkerPosPetite = ["", "8%", "", "15%", "20%", "25%"]
     function petiteShowLinks(){
         linker.style.backgroundColor = "rgba("+255+","+255+","+255+","+0.95+")";
         for (i=1; i < linker.children.length-1; i++){
@@ -129,7 +129,7 @@
                 linker.children[i].style.paddingTop = "2%"; 
             }
             linker.children[i].style.marginTop = linkerPosPetite[i];
-            linker.children[i].style.fontSize = "2vw";
+            linker.children[i].style.fontSize = "4vw";
             linker.children[i].style.paddingBottom = "2%"; 
             linker.children[i].style.marginLeft = "0%";
             linker.children[i].style.textAlign = "center";
