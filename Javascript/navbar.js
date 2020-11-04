@@ -209,12 +209,14 @@
                 linker.children[1].style.transition = "0s";
                 linker.children[1].style.color = "white"
                 dropdownBar.style.opacity = "95%";
+                dropdownBar.style.visibility = "visible";
             }}
     // DROPDOWNBAR MOUSELEAVE
         dropdownBar.addEventListener("mouseleave", dropout);
         function dropout(){
             linker.children[1].style.color = "#03394f";
             dropdownBar.style.opacity = "0%";
+            dropdownBar.style.visibility = "hidden";
         }
     // WINDOW RESIZE
         var logo = document.getElementById("logo");
@@ -222,6 +224,7 @@
         function resize(){
             linker.children[1].style.color = "#03394f";
             dropdownBar.style.opacity = "0%";
+            dropdownBar.style.visibility = "hidden";
             transition = false;
             if (window.innerWidth < 850){
                 logo.style.marginTop = "0.5vw";
@@ -263,6 +266,7 @@
         function backgroundLink(){
                 linker.children[1].style.color = "#03394f";
                 dropdownBar.style.opacity = "0%"; 
+                dropdownBar.style.visibility = "hidden";
                 if(window.scrollY==0){
                     linker.style.backgroundColor = "";
                     linker.style.transition = "0,25s";
