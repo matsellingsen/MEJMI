@@ -87,8 +87,8 @@
         <p>
             <b>Hva var ditt førsteinntrykk av nettsiden?</b>
             Stort sett hadde brukerne et positivt førsteinntrykk av nettsiden.
-Noen mente skriften var litt liten og fargene var blasse, det kunne vært tydeligere hva vi tilbyr, vi manglet litt «wow-faktoren» for å gripe kunder.
-Kontakt oss knappen nederst ble satt pris på, noen synes burger-menyen sin spinne effekt er kul.
+            Noen mente skriften var litt liten og fargene var blasse, det kunne vært tydeligere hva vi tilbyr, vi manglet litt «wow-faktoren» for å gripe kunder.
+            Kontakt oss knappen nederst ble satt pris på, noen synes burger-menyen sin spinne effekt er kul.
             
             <b>Hvis det var vanskelig/forvirrende å navigere på nettsiden, hva var vanskelig?</b>
             Stort sett syntes brukerne det var enkelt å navigere seg rundt på siden. Det ble nevnt noen mulige forbedringsområder som f.eks. å ikke måtte trykke på burger-menyen så ofte,
@@ -97,7 +97,7 @@ Kontakt oss knappen nederst ble satt pris på, noen synes burger-menyen sin spin
             <b>Var det ellers noen problemer/tekniske feil du støtte på? Hvis ja, hva og hvor?</b>
             Testerne var stort sett tilfredsstilt, dog var det noen som støtte på noen problemer. Et problem med "logo", "sosiale medier" og
             "epost" boksene ved grafisk profil. Hvor "logo" av og til oppførte seg som link. Vanskelig å lese navbaren på toppen av "grafisk profil". Den ble også veldig brått hvit.
-             Mellomrom mellom visse elementer på "kotakt oss" var for langt slik at en måtte scrolle for mye. 
+            Mellomrom mellom visse elementer på "kotakt oss" var for langt slik at en måtte scrolle for mye. 
             Noen av tekstene på hovedbilde var vanskelige å lese, dårlige kontraster. For mange typer skriftstørrelser.
             SEO kan være vanskelig for kunder å forstå.
             Noen bilder hadde for lav oppløsning. 
@@ -113,12 +113,35 @@ Kontakt oss knappen nederst ble satt pris på, noen synes burger-menyen sin spin
     <section>
         <!-- Edvard, Mats -->
         <h2>Respons</h2>
+        <h4>Her tar vi for oss tilbakemeldingene som gikk mest igjen</h4>
         <p>
-            Det er en del designforbedringer vi kan gjøre etter leveringsdatoen for prosjektet.
-            Det var gjennomgående at tekstfarge var dårlig valgt noen steder og at størrelse på tekst var inkonsekvent.
-            Videre kunne vi forbedret navbaren da det blant annet var vanskelig å lese av den fra siden grafisk design, og den ble hvit ved scrolling.
-            Også mellomrom mellom elementer på nettsiden kan bli mindre slik at det blir mindre scrolling. Linken som oppstod ved «logo» på «grafisk design» måtte bli fiksa.
-            Dette kommer fra at drop down menyen fra navbaren ikke blir lukket. 
+            I undersøkelsen spurte vi først om førsteinntrykket av nettsiden.
+            Responsen her var i stor grad at siden var ryddig, pen, og virket profesjonell.
+            Videre gikk det igjen at det enkelte steder var litt utydelig, som konsekvens av for liten skriftstørrelse og vage kontraster i blant annet underoverskriften til hovedsiden, referanser og tjenester.
+            På stor skjerm på PC er ikke dette et problem, men på mobilversjonen hvor alt igjen er mindre, blir fargekontrastene enda mer utydelig.
+            For å fikse dette kunne vi enten hatt en skriftfarge og størrelse som skilte seg mer ut, eller byttet ut bakgrunnsbildene til bilder som har tydelige fargekontrast med teksten.
+        </p>
+        <br>
+        <p>
+            På spørsmålet om siden var enkel å navigere rundt på, var responsen i hovedsak at dette var intuitivt.
+            Samtidig ble det repetert at navbaren trengte mer rom, og linkene burde vært lengre fra hverandre.
+            Her er det åpenbart at dette gjelder mobilversjonen hvor det er enighet om at har man ikke pianofingre, kan det være en liten utfordring å alltid få trykket på riktig link.
+            Dette er et problem vi kunne fikset på diverse måter, blant annet å simpelt lage mer mellomrom mellom linkene. 
+            Ulempen med dette er at da vil navbaren ta opp enda mer plass, noe vi helst vil unngå ettersom den allerede tar opp omlag ¼ av siden. 
+            For å gjøre linkene mer klikkbare uten at det skal ta opp for mye plass, ville en bedre løsning da vært å plassere to linker i hver sin kolonne, istedenfor alle i en.
+        </p>
+        <br>
+        <p>
+            Angående diverse problemer/tekniske feil fikk vi en respons angående “Tjenester” på hovedsiden, som omhandlet at området hvor “hover” ble aktivert,
+            ikke var identisk med området du kunne klikke på for å gå til valgt side. Dette kunne vi fikset ved å f.eks legge til eventlisteners/onclick-funksjoner i Javascript bundet til samme element som hover-effekten er,
+            istedenfor å ha et a-element med href i html-filen. Dette er en såpass liten teknisk feil at det ikke nødvendigvis er noe poeng, men det var den eneste konkrete "tekniske" feilen som ble kommentert.
+            Videre var det et par gjentatte kommentarer om at Navbaren ble utydelig og vanskelig å se enkelte steder. Dette gjelder i all hovedsak samme områder som kommentarene om utydelige undertekster.
+            Løsningene er det samme som med tekstene. bytte ut bildene, eller endre tekstfargen. Derimot er ikke det like enkelt å endre tekstfarge på Navbaren som underoverskriftene,
+            i og med at Navbaren har lik kode på alle sidene. Hva vi kunne gjort (Som vi faktisk vurderte helt i begynnelsen) er å lage en funksjon som tar inn fargen til elementet som ligger direkte under Navbaren,
+            regne ut YIQ-verdien, (hvor mørk/lys fargen er) og deretter skifte fargen på Navbaren til enten hvit eller mørkeblå. Dessverre ville vi støtt på et nytt problem med denne løsningen, 
+            nemlig at et bilde ikke har en enkel farge. Men, vi kunne lagt til en farge til bildet som simpelt viste til om bildet hadde mørke eller lyse fargetoner.
+            Denne løsningen kunne fungert, men absolutt ikke feilfritt. 
+            
         </p>
         <!-- Provide your response to the feedback. Concretely, describe what
             you could do (once the class is over) to address this feedback with changes in your
