@@ -16,7 +16,7 @@ function getPosition(){
     var cBouncing = canvasBouncing.getContext("2d");
 
  // SKRIV INN ANTALL BALLER HER   
-    var circleAmount = 1000;
+    var circleAmount = 200;
 
 window.addEventListener("resize", resizer);
 
@@ -90,7 +90,7 @@ var circleArray = [];
 function leggTilSirkel(){
 for (i = 0; i < circleAmount; i++){
 //STØRRELSE PÅ BALLENE = RADIUS
-var radius = (window.innerWidth/50);
+var radius = (window.innerWidth/40);
 var a = Math.random() * (canvasBouncing.width - radius * 2) + radius;
 var d = Math.random() * (canvasBouncing.height - radius * 2) + radius;
 var ax = (Math.random() - 0.5)*0.5;
