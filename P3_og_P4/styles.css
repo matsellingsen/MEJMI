@@ -11,6 +11,9 @@ header{
     margin-left: 20%;
     padding: 1%;
 }
+header a {
+    color: #ffb404;
+}
 header h1, header h2{
     font-weight: 70;
 }
