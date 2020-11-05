@@ -1,19 +1,22 @@
 var canvasBouncing = document.getElementById("bouncing");
+var body = document.body;
 function getPosition(){
-    var tjenester = document.getElementById("tjenester");
-    const position = tjenester.getBoundingClientRect();
-    var width = tjenester.offsetWidth;
-    var height = tjenester.offsetHeight;
+    //var tjenester = document.getElementById("tjenester");
+   // const position = tjenester.getBoundingClientRect();
+    var width = window.innerWidth;
+    var height = body.scrollHeight;
     canvasBouncing.style.position = "absolute";
-    canvasBouncing.style.top = "140%";
+  //  canvasBouncing.style.top = "-50%";
     canvasBouncing.style.zIndex = "-1";
     canvasBouncing.width = width;
-    canvasBouncing.height = height*0.75;  
+    canvasBouncing.height = height;  
     //canvasBouncing.style.border = "1px solid black";  
     }
     getPosition();
     var cBouncing = canvasBouncing.getContext("2d");
-    var circleAmount = 6;
+
+ // SKRIV INN ANTALL BALLER HER   
+    var circleAmount = 1000;
 
 window.addEventListener("resize", resizer);
 
@@ -35,7 +38,9 @@ function Circle(a, d, ax, dy, radius) {
         cBouncing.beginPath();
         cBouncing.arc(this.a , this.d, this.radius, 0, Math.PI * 2, false );
         //c.lineWidth = 1
+    // FARGE PÅ BALLENE HER
         cBouncing.fillStyle = "#fcc201";
+    // FARGE PÅ KANTEN AV BALLENE HER
         cBouncing.strokeStyle = "white";
         
         
@@ -84,6 +89,7 @@ var circleArray = [];
 // setter posisijon, størrelse og bevegelsesfart til sirkel 
 function leggTilSirkel(){
 for (i = 0; i < circleAmount; i++){
+//STØRRELSE PÅ BALLENE = RADIUS
 var radius = (window.innerWidth/50);
 var a = Math.random() * (canvasBouncing.width - radius * 2) + radius;
 var d = Math.random() * (canvasBouncing.height - radius * 2) + radius;
@@ -95,7 +101,7 @@ leggTilSirkel();
 
 function animate() {
     requestAnimationFrame(animate);  
-    cBouncing.clearRect(0, 0, innerWidth, innerHeight); 
+    cBouncing.clearRect(0, 0, canvasBouncing.width, canvasBouncing.height); 
        
     // Oppdaterer sirklene 
     for (i = 0; i < circleAmount  ; i++){ 
